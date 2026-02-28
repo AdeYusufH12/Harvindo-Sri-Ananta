@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title >Harvindo Sri Ananta</title>
+
+<link rel="icon" type="image/png" href="Assets/images/logoperusahaan.png">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body { font-family: 'Poppins', sans-serif; }
+
+/* Marquee animation */
+@keyframes slidePremium {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-40%);
+  }
+}
+
+.marquee {
+  animation: slidePremium 25s linear infinite alternate;
+}
+.marquee:hover {
+  animation-play-state: paused;
+}
+</style>
+</head>
+
+<body class="text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="Assets/images/logoperusahaan.png" 
+           alt="Logo PT Harvindo Sri Ananta" 
+           class="h-10 w-auto">
+      <h1 class="text-xl font-bold">
+        PT Harvindo Sri Ananta
+      </h1>
+    </div>
+
+    <!-- Burger Button (Mobile Only) -->
+    <button id="menuBtn" class="md:hidden text-3xl focus:outline-none">
+         <span id="menuIcon">☰</span>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex items-center space-x-8">
+
+      <a href="index.html" class="no-underline hover:text-green-400 transition ">Beranda</a>
+      <a href="#profil" class="no-underline hover:text-green-400 transition ">Profil</a>
+
+      <!-- DROPDOWN PRODUK -->
+      <div class="relative group">
+        <button class="no-underline focus:outline-none">
+          Produk
+        </button>
+
+        <div class="absolute left-0 top-full w-48 bg-white shadow-lg rounded
+                    opacity-0 invisible
+                    group-hover:opacity-100 group-hover:visible
+                    transition duration-200">
+
+          <a href="produk-combine.html"
+             class="block px-4 py-2 hover:bg-gray-100 hover:text-green-400 transition ">
+             Combine Harvester
+          </a>
+
+          <a href="produk-tractor.html"
+             class="block px-4 py-2 hover:bg-gray-100 hover:text-green-400 transition ">
+             Tractor
+          </a>
+        </div>
+      </div>
+
+      <a href="#layanan" class="no-underline hover:text-green-400 transition ">Layanan</a>
+      <a href="#hubungikami" class="no-underline hover:text-green-400 transition ">Hubungi Kami</a>
+
+    </nav>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+     class="md:hidden bg-white border-t shadow
+            overflow-hidden max-h-0 opacity-0
+            transition-all duration-500 ease-in-out">
+
+    <div class="px-6 py-4 space-y-4">
+
+      <a href="index.html" class="block hover:text-green-400 transition mobile-link">Beranda</a>
+      <a href="index.html#profil" class="block hover:text-green-400 transition mobile-link">Profil</a>
+
+      <!-- Mobile Produk -->
+      <div>
+        <p class="font-semibold mb-2">Produk</p>
+        <a href="produk-combine.html" class="block pl-4 mb-2 hover:text-green-400 transition">
+          Combine Harvester
+        </a>
+        <a href="produk-tractor.html" class="block pl-4 hover:text-green-400 transition">
+          Tractor
+        </a>
+      </div>
+
+      <a href="index.html#layanan" class="block hover:text-green-400 transition mobile-link">Layanan</a>
+      <a href="index.html#hubungikami" class="block hover:text-green-400 transition mobile-link">Hubungi Kami</a>
+
+    </div>
+
+  </div>
+
+</header>
+
+<!-- HERO -->
+<section 
+  class="h-screen bg-cover bg-center relative flex items-center"
+  style="background-image: url('Assets/images/gambarHero.jpeg');">
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Content -->
+  <div class="relative max-w-7xl mx-auto px-6 w-full">
+
+    <div class="max-w-2xl text-white">
+
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        Solusi Combine Harvester Terpercaya 
+        untuk Petani Indonesia
+      </h1>
+
+      <p class="text-lg mb-8 text-gray-200">
+        Dealer combine harvester dengan standar kualitas tinggi 
+        dan dukungan layanan purna jual terpercaya.
+      </p>
+
+      <a href="https://wa.me/6282258063520"
+         class="inline-block bg-green-600 hover:bg-green-700 
+                text-white px-6 py-3 rounded-lg font-semibold transition">
+         Hubungi Kami
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TENTANG -->
+<section id="profil" class="py-16 container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+  <img src="Assets/images/profilecompany.png" class="rounded-lg shadow hover:scale-110 transition duration-500">
+  <div>
+    <h3 class="text-2xl font-bold mb-4">Tentang Kami</h3>
+    <p>
+      PT Harvindo Sri Ananta merupakan Dealer Resmi Lovol mesin pertanian terpercaya yang melayani petani dan kelompok tani di Seluruh Indonesia.
+    </p>
+    <p>
+        Kami menyediakan Combine Harvester dan Tractor berkualitas dengan dukungan layanan profesional.
+    </p>
+  </div>
+</section>
+
+<!-- LAYANAN -->
+<section id="layanan" class="bg-gray-100 py-16">
+  <div class="container mx-auto px-6 text-center">
+    <h3 class="text-2xl font-bold mb-10">Layanan Kami</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded shadow hover:-translate-y-2 transition">
+        <h4 class="font-semibold mb-2">Penjualan Unit</h4>
+        <p>Penyediaan unit combine dan tractor berkualitas.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow hover:-translate-y-2 transition">
+        <h4 class="font-semibold mb-2">Service & Sparepart</h4>
+        <p>Dukungan teknis dan ketersediaan suku cadang.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow hover:-translate-y-2 transition">
+        <h4 class="font-semibold mb-2">Konsultasi</h4>
+        <p>Pendampingan pemilihan mesin sesuai kebutuhan lahan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="text-center mb-14">
+      <h2 class="text-2xl md:text-4xl font-bold mb-10">
+        Dokumentasi Kegiatan
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Dokumentasi aktivitas distribusi, servis, dan survei lapangan PT Harvindo Sri Ananta.
+      </p>
+    </div>
+
+    <!-- Grid Gallery -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <!-- Item 1 -->
+      <div class="overflow-hidden rounded-xl shadow group">
+        <img src="Assets/images/foto2.jpg"
+             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+      </div>
+
+      <!-- Item 2 -->
+      <div class="overflow-hidden rounded-xl shadow group">
+        <img src="Assets/images/foto 5.jpg"
+             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+      </div>
+
+      <!-- Item 3 -->
+      <div class="overflow-hidden rounded-xl shadow group">
+        <img src="Assets/images/foto 6.jpg"
+             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+      </div>
+
+      <!-- Item 4 -->
+      <div class="overflow-hidden rounded-xl shadow group">
+        <img src="Assets/images/foto1.jpg"
+             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+      </div>
+
+      <!-- Item 5 -->
+      <div class="overflow-hidden rounded-xl shadow group">
+        <img src="Assets/images/foto 4.jpg"
+             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+      </div>
+
+      <!-- Item 6 -->
+      <div class="overflow-hidden rounded-xl shadow group">
+        <img src="Assets/images/foto 3.jpg"
+             class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section id="testimoni" class="py-16 overflow-hidden">
+  <h3 class="text-2xl font-bold text-center mb-8">Testimoni</h3>
+  <div class="flex space-x-6 marquee w-max">
+    <div class="bg-white p-6 rounded shadow w-72">
+      <p>"Sejak pakai Combine Harvester Lovol, panen jadi jauh lebih cepat dan hemat tenaga. Hasilnya juga bersih."</p>
+      <h5 class="mt-4 font-semibold">Tatang - Subang</h5>
+    </div>
+    <div class="bg-white p-6 rounded shadow w-72">
+      <p>"Mesinnya kuat dan stabil di sawah berlumpur. Cocok untuk kondisi lahan kami."</p>
+      <h5 class="mt-4 font-semibold">Mang Ama - Karawang</h5>
+    </div>
+    <div class="bg-white p-6 rounded shadow w-72">
+      <p>"BBM lebih irit dibanding mesin sebelumnya. Sangat membantu mengurangi biaya operasional"</p>
+      <h5 class="mt-4 font-semibold">Hj Hasan - Indramayu</h5>
+    </div>
+    <div class="bg-white p-6 rounded shadow w-72">
+      <p>"Perawatannya mudah dan sparepart gampang dicari. Jadi lebih tenang saat musim panen."</p>
+      <h5 class="mt-4 font-semibold">Jembar - Subang</h5>
+    </div>
+    <div class="bg-white p-6 rounded shadow w-72">
+      <p>"Produktivitas meningkat signifikan. Sekarang panen bisa selesai lebih cepat dari biasanya."</p>
+      <h5 class="mt-4 font-semibold">Lasmino - Lamongan</h5>
+    </div>
+    <div class="bg-white p-6 rounded shadow w-72">
+      <p>"Operator cepat beradaptasi karena pengoperasiannya simpel dan nyaman."</p>
+      <h5 class="mt-4 font-semibold">Sri - Bojonegoro</h5>
+    </div>
+    <div class="bg-white p-6 rounded shadow w-72">
+      <p>"Kualitas potongan rapi dan kehilangan gabah sangat minim."</p>
+      <h5 class="mt-4 font-semibold">Didik - Bojonegoro</h5>
+    </div>
+    <div class="bg-white p-6 rounded shadow w-72">
+      <p>"Pelayanan dealer resmi Lovol juga responsif dan profesional."</p>
+      <h5 class="mt-4 font-semibold">Gigih - LamonganS</h5>
+    </div>
+    <div class="bg-white p-6 rounded shadow w-72">
+      <p>"Investasi yang sangat worth it untuk kelompok tani kami."</p>
+      <h5 class="mt-4 font-semibold">Puri - Subang</h5>
+    </div>
+  </div>
+</section>
+
+<!-- HUBUNGI -->
+<section id="hubungikami" class="bg-gray-100 py-16">
+  <div class="container mx-auto px-6 max-w-xl">
+    <h3 class="text-2xl font-bold mb-6 text-center">Hubungi Kami</h3>
+    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+      <input type="hidden" name="access_key" value="88e9c3e1-6465-4156-8a6c-b57c42b9f33d">
+      <input type="text" name="Name" placeholder="Nama" required class="w-full p-3 border rounded">
+      <input type="email" name="Email" placeholder="Email" required class="w-full p-3 border rounded">
+      <textarea placeholder="Pesan" name="pesan" required class="w-full p-3 border rounded"></textarea>
+      <button class="bg-green-700 text-white px-6 py-3 rounded w-full">
+        Kirim
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black text-white pt-16 pb-6">
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+
+    <!-- Kolom 1 -->
+    <div class="text-left">
+      <h3 class="text-xl font-semibold mb-4">
+        PT Harvindo Sri Ananta
+      </h3>
+
+      <p class="flex items-center mb-2">
+        Email : operational@harvindo.com
+      </p>
+
+      <p class="flex items-center mb-2">
+        WhatsApp : 08xxxxxxxxxx
+      </p>
+
+      <p class="flex items-center">
+        Alamat : Jl. Raya Rt 01/Rw 02 Pangulah Selatan, Kec. Kota Baru, Kab. Karawang, Jawa Barat 41374
+      </p>
+    </div>
+
+    <!-- Kolom 2 -->
+    <div class="md:text-center">
+  <h3 class="text-xl font-semibold mb-4">Sosial Media</h3>
+
+  <a href="https://web.facebook.com/profile.php?id=100077341247896"
+     target="_blank"
+     class="flex items-center justify-start md:justify-center mb-3 hover:text-green-400 transition">
+
+    <img src="assets/images/logofb.png"
+         alt="Facebook"
+         class="w-5 h-5 mr-2">
+    Facebook
+  </a>
+
+  <a href="https://instagram.com/username"
+     target="_blank"
+     class="flex items-center justify-start md:justify-center mb-3 hover:text-green-400 transition">
+
+    <img src="assets/images/logoig.png"
+         alt="Instagram"
+         class="w-5 h-5 mr-2">
+    Instagram
+  </a>
+
+  <a href="https://www.tiktok.com/@harvindolovol"
+     target="_blank"
+     class="flex items-center justify-start md:justify-center hover:text-green-400 transition">
+
+    <img src="assets/images/logotiktok.png"
+         alt="TikTok"
+         class="w-5 h-5 mr-2">
+    TikTok
+  </a>
+</div>
+
+    <!-- Kolom 3 -->
+    <div class="text-left md:text-right">
+      <h3 class="text-xl font-semibold mb-4">Navigasi</h3>
+
+      <p class="mb-2"><a href="#profil" class="no-underline hover:text-green-400 transition">Tentang Kami</a></p>
+      <p class="mb-2"><a href="#layanan" class="no-underline hover:text-green-400 transition">Layanan</a></p>
+      <p><a href="#hubungikami" class="no-underline hover:text-green-400 transition">Hubungi Kami</a></p>
+    </div>
+
+  </div>
+
+  <!-- Garis -->
+  <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400 text-sm">
+    Copyright© 2026 PT Harvindo Sri Ananta. All Rights Reserved.
+  </div>
+
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const menuIcon = document.getElementById("menuIcon");
+
+  let isOpen = false;
+
+  menuBtn.addEventListener("click", function () {
+
+    if (!isOpen) {
+      mobileMenu.classList.remove("max-h-0", "opacity-0");
+      mobileMenu.classList.add("max-h-96", "opacity-100");
+      menuIcon.textContent = "✕";
+      isOpen = true;
+    } else {
+      mobileMenu.classList.remove("max-h-96", "opacity-100");
+      mobileMenu.classList.add("max-h-0", "opacity-0");
+      menuIcon.textContent = "☰";
+      isOpen = false;
+    }
+
+  });
+
+  // Auto close saat klik link
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function () {
+      mobileMenu.classList.remove("max-h-96", "opacity-100");
+      mobileMenu.classList.add("max-h-0", "opacity-0");
+      menuIcon.textContent = "☰";
+      isOpen = false;
+    });
+  });
+
+});
+</script>
+
+</body>
+</html>

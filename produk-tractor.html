@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tractor | Harvindo Sri Ananta</title>
+  <link rel="icon" type="image/png" href="Assets/images/logoperusahaan.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans">
+
+<!-- HEADER -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="Assets/images/logoperusahaan.png" 
+           alt="Logo PT Harvindo Sri Ananta" 
+           class="h-10 w-auto">
+      <h1 class="text-xl font-bold">
+        PT Harvindo Sri Ananta
+      </h1>
+    </div>
+
+    <!-- Burger Button (Mobile Only) -->
+    <button id="menuBtn" class="md:hidden text-3xl focus:outline-none">
+         <span id="menuIcon">☰</span>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex items-center space-x-8">
+
+      <a href="index.html" class="no-underline hover:text-green-400 transition ">Beranda</a>
+      <a href="index.html#profil" class="no-underline hover:text-green-400 transition ">Profil</a>
+
+      <!-- DROPDOWN PRODUK -->
+      <div class="relative group">
+        <button class="no-underline focus:outline-none">
+          Produk
+        </button>
+
+        <div class="absolute left-0 top-full w-48 bg-white shadow-lg rounded
+                    opacity-0 invisible
+                    group-hover:opacity-100 group-hover:visible
+                    transition duration-200">
+
+          <a href="produk-combine.html"
+             class="block px-4 py-2 hover:bg-gray-100 hover:text-green-400 transition ">
+             Combine Harvester
+          </a>
+
+          <a href="produk-tractor.html"
+             class="block px-4 py-2 hover:bg-gray-100 hover:text-green-400 transition ">
+             Tractor
+          </a>
+        </div>
+      </div>
+
+      <a href="index.html#layanan" class="no-underline hover:text-green-400 transition ">Layanan</a>
+      <a href="index.html#hubungikami" class="no-underline hover:text-green-400 transition ">Hubungi Kami</a>
+
+    </nav>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+     class="md:hidden bg-white border-t shadow
+            overflow-hidden max-h-0 opacity-0
+            transition-all duration-500 ease-in-out">
+
+    <div class="px-6 py-4 space-y-4">
+
+      <a href="index.html" class="block hover:text-green-400 transition mobile-link">Beranda</a>
+      <a href="index.html#profil" class="block hover:text-green-400 transition mobile-link">Profil</a>
+
+      <!-- Mobile Produk -->
+      <div>
+        <p class="font-semibold mb-2">Produk</p>
+        <a href="produk-combine.html" class="block pl-4 mb-2 hover:text-green-400 transition">
+          Combine Harvester
+        </a>
+        <a href="produk-tractor.html" class="block pl-4 hover:text-green-400 transition">
+          Tractor
+        </a>
+      </div>
+
+      <a href="index.html#layanan" class="block hover:text-green-400 transition mobile-link">Layanan</a>
+      <a href="index.html#hubungikami" class="block hover:text-green-400 transition mobile-link">Hubungi Kami</a>
+
+    </div>
+
+  </div>
+
+</header>
+
+<!-- HERO -->
+<section class="h-[70vh] bg-cover bg-center relative flex items-center"
+style="background-image: url('Assets/images/herotractor.png');">
+
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 text-white">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+      Performa Andal untuk Operasional Profesional
+    </h1>
+    <p class="text-lg max-w-2xl">
+      TB 554 memberikan performa stabil dan daya tahan tinggi untuk mendukung setiap tahap pengolahan lahan.
+    </p>
+  </div>
+</section>
+
+<!-- DESKRIPSI -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    
+    <img src="Assets/images/tractor.png" class="rounded-lg shadow">
+
+    <div>
+      <h2 class="text-3xl font-bold mb-6">Spesifikasi Utama Tractor Tb 554-b</h2>
+      <ul class="space-y-3 text-gray-700">
+        <li>✔ Tenaga 55HP, daya tarik dan PTO lebih kuat dan cepat</li>
+        <li>✔ 2 kali penyaringan Filter bahan bakar solar</li>
+        <li>✔ Pemberat yang bisa dibongkar pasang</li>
+        <li>✔ Lampu projector LED tahan lama</li>
+        <li>✔ Knalpot di desain keatas untuk kenyamanan operator</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- SPESIFIKASI DETAIL -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center mb-12">
+      Spesifikasi Detail TB 554-b
+    </h2>
+
+    <div class="overflow-x-auto rounded-lg shadow">
+
+      <table class="min-w-full border border-gray-300 text-sm">
+
+        <thead class="bg-gray-100 text-gray-700">
+          <tr>
+            <th class="border px-4 py-3 text-left">Item</th>
+            <th class="border px-4 py-3 text-left">Unit</th>
+            <th class="border px-4 py-3 text-left">TB 554-b</th>
+          </tr>
+        </thead>
+
+        <tbody class="divide-y divide-gray-200">
+
+          <!-- Mesin -->
+          <tr class="bg-gray-50 font-semibold">
+            <td colspan="3" class="px-4 py-2">Mesin</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Tenaga</td>
+            <td class="border px-4 py-2">HP/KW</td>
+            <td class="border px-4 py-2">55 / 40.4</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Type</td>
+            <td class="border px-4 py-2">-</td>
+            <td class="border px-4 py-2">4 Silinder, Diesel</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Putaran Mesin *ISO TR14396-ECE R120</td>
+            <td class="border px-4 py-2">rpm</td>
+            <td class="border px-4 py-2">2400</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Tenaga PTO</td>
+            <td class="border px-4 py-2">kW</td>
+            <td class="border px-4 py-2">34.4</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Volume Silinder</td>
+            <td class="border px-4 py-2">cc</td>
+            <td class="border px-4 py-2">3857</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Torsi Maksimum *ISO TR14396</td>
+            <td class="border px-4 py-2">Nm</td>
+            <td class="border px-4 py-2">">215/1600-1800"</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Kapasitas Tangki Bahan Bakar</td>
+            <td class="border px-4 py-2">Liter</td>
+            <td class="border px-4 py-2">60L</td>
+          </tr>
+
+          <!-- DIMENSI & Kabin -->
+          <tr class="bg-gray-50 font-semibold">
+            <td colspan="3" class="px-4 py-2">Dimensi & Kabin</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Panjang</td>
+            <td class="border px-4 py-2">mm</td>
+            <td class="border px-4 py-2">4030</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Lebar</td>
+            <td class="border px-4 py-2">mm</td>
+            <td class="border px-4 py-2">1650</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Tinggi </td>
+            <td class="border px-4 py-2">mm</td>
+            <td class="border px-4 py-2">2520</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Berat</td>
+            <td class="border px-4 py-2">Kg</td>
+            <td class="border px-4 py-2">2190</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Ketinggian dari Tanah</td>
+            <td class="border px-4 py-2">mm</td>
+            <td class="border px-4 py-2">310</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Kabin</td>
+            <td class="border px-4 py-2">-</td>
+            <td class="border px-4 py-2">ROPS</td>
+          </tr>
+
+          <!-- Sistem Penggerak -->
+          <tr class="bg-gray-50 font-semibold">
+            <td colspan="3" class="px-4 py-2">Sistem Penggerak</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Sistem transmisi</td>
+            <td class="border px-4 py-2">-</td>
+            <td class="border px-4 py-2">Kopling kering Dua Tahap</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Gigi Percepatan</td>
+            <td class="border px-4 py-2">-</td>
+            <td class="border px-4 py-2">12F Maju + 12F Mundur "Synchro/shuttle shift</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Differential Lock</td>
+            <td class="border px-4 py-2">-</td>
+            <td class="border px-4 py-2">Tersedia</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">PTO</td>
+            <td class="border px-4 py-2">-</td>
+            <td class="border px-4 py-2">540/1000 Rpm</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Kemudi</td>
+            <td class="border px-4 py-2">-</td>
+            <td class="border px-4 py-2">Power Steering</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Radius Putar tanpa rem</td>
+            <td class="border px-4 py-2">m</td>
+            <td class="border px-4 py-2">4,3</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Radius Putar dengan rem 1 sisi</td>
+            <td class="border px-4 py-2">m</td>
+            <td class="border px-4 py-2">3,8</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Ukuran ban depan</td>
+            <td class="border px-4 py-2">mm</td>
+            <td class="border px-4 py-2">8,3-24</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Ukuran ban belakang</td>
+            <td class="border px-4 py-2">mm</td>
+            <td class="border px-4 py-2">14,9-28</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Sistem Pengereman</td>
+            <td class="border px-4 py-2">-</td>
+            <td class="border px-4 py-2">Cakram Basah</td>
+          </tr>
+
+          <!-- Sistem Hidrolik -->
+          <tr class="bg-gray-50 font-semibold">
+            <td colspan="3" class="px-4 py-2">Sistem Hidrolik</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Tipe</td>
+            <td class="border px-4 py-2">-</td>
+            <td class="border px-4 py-2">Force kontrol dan Posisi kontrol setelan terpisah</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">3 point Hitch</td>
+            <td class="border px-4 py-2">-</td>
+            <td class="border px-4 py-2">ISO Cat. 1N</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Laju Aliran Pompa Hidrolik</td>
+            <td class="border px-4 py-2">L/m</td>
+            <td class="border px-4 py-2">35</td>
+          </tr>
+
+          <tr>
+            <td class="border px-4 py-2">Daya angkat 610mm dibelakang titik hitch</td>
+            <td class="border px-4 py-2">kg</td>
+            <td class="border px-4 py-2">1020</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-12">Keunggulan Produk</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 shadow rounded hover:-translate-y-2 transition">
+        <h3 class="font-semibold mb-3">Mesin Bertenaga & Irit BBM</h3>
+        <p>Performa kuat untuk bajak sawah maupun lahan kering, tetap efisien bahan bakar.</p>
+      </div>
+
+      <div class="p-6 shadow rounded hover:-translate-y-2 transition">
+        <h3 class="font-semibold mb-3">Transmisi Halus & Mudah Dikendalikan</h3>
+        <p>Sistem persneling responsif, cocok untuk petani pemula maupun profesional.</p>
+      </div>
+
+      <div class="p-6 shadow rounded hover:-translate-y-2 transition">
+        <h3 class="font-semibold mb-3">Konstruksi Kokoh & Tahan Lama</h3>
+        <p>Rangka kuat dan komponen berkualitas tinggi, siap kerja berat dalam jangka panjang.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-green-700 text-white py-16 text-center">
+  <h2 class="text-3xl font-bold mb-6">
+    Tertarik dengan Combine Harvester Kami?
+  </h2>
+  <a href="#" class="bg-white text-green-700 px-6 py-3 rounded font-semibold hover:bg-gray-200 transition">
+    Hubungi Kami
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black text-white pt-16 pb-6">
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+
+    <!-- Kolom 1 -->
+    <div class="text-left">
+      <h3 class="text-xl font-semibold mb-4">
+        PT Harvindo Sri Ananta
+      </h3>
+
+      <p class="flex items-center mb-2">
+        Email : operational@harvindo.com
+      </p>
+
+      <p class="flex items-center mb-2">
+        WhatsApp : 08xxxxxxxxxx
+      </p>
+
+      <p class="flex items-center">
+        Alamat : Jl. Raya Rt 01/Rw 02 Pangulah Selatan, Kec. Kota Baru, Kab. Karawang, Jawa Barat 41374
+      </p>
+    </div>
+
+    <!-- Kolom 2 -->
+    <div class="md:text-center">
+  <h3 class="text-xl font-semibold mb-4">Sosial Media</h3>
+
+  <a href="https://web.facebook.com/profile.php?id=100077341247896"
+     target="_blank"
+     class="flex items-center justify-start md:justify-center mb-3 hover:text-green-400 transition">
+
+    <img src="assets/images/logofb.png"
+         alt="Facebook"
+         class="w-5 h-5 mr-2">
+    Facebook
+  </a>
+
+  <a href="https://instagram.com/username"
+     target="_blank"
+     class="flex items-center justify-start md:justify-center mb-3 hover:text-green-400 transition">
+
+    <img src="assets/images/logoig.png"
+         alt="Instagram"
+         class="w-5 h-5 mr-2">
+    Instagram
+  </a>
+
+  <a href="https://www.tiktok.com/@harvindolovol"
+     target="_blank"
+     class="flex items-center justify-start md:justify-center hover:text-green-400 transition">
+
+    <img src="assets/images/logotiktok.png"
+         alt="TikTok"
+         class="w-5 h-5 mr-2">
+    TikTok
+  </a>
+</div>
+
+    <!-- Kolom 3 -->
+    <div class="text-left md:text-right">
+      <h3 class="text-xl font-semibold mb-4">Navigasi</h3>
+
+      <p class="mb-2"><a href="index.html#profil" class="no-underline hover:text-green-400 transition">Tentang Kami</a></p>
+      <p class="mb-2"><a href="index.html#layanan" class="no-underline hover:text-green-400 transition">Layanan</a></p>
+      <p><a href="index.html#hubungikami" class="no-underline hover:text-green-400 transition">Hubungi Kami</a></p>
+    </div>
+
+  </div>
+
+  <!-- Garis -->
+  <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400 text-sm">
+    Copyright© 2026 PT Harvindo Sri Ananta. All Rights Reserved.
+  </div>
+
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const menuIcon = document.getElementById("menuIcon");
+
+  let isOpen = false;
+
+  menuBtn.addEventListener("click", function () {
+
+    if (!isOpen) {
+      mobileMenu.classList.remove("max-h-0", "opacity-0");
+      mobileMenu.classList.add("max-h-96", "opacity-100");
+      menuIcon.textContent = "✕";
+      isOpen = true;
+    } else {
+      mobileMenu.classList.remove("max-h-96", "opacity-100");
+      mobileMenu.classList.add("max-h-0", "opacity-0");
+      menuIcon.textContent = "☰";
+      isOpen = false;
+    }
+
+  });
+
+  // Auto close saat klik link
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function () {
+      mobileMenu.classList.remove("max-h-96", "opacity-100");
+      mobileMenu.classList.add("max-h-0", "opacity-0");
+      menuIcon.textContent = "☰";
+      isOpen = false;
+    });
+  });
+
+});
+</script>
+
+</body>
+</html>
