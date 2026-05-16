@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artikel & Informasi Pertanian | Harvindo Sri Ananta</title>
+  <link rel="icon" type="image/png" href="assets/images/logoperusahaan.png">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Baca artikel dan informasi seputar mesin pertanian, tips perawatan combine harvester dan tractor, serta teknologi pertanian modern dari PT Harvindo Sri Ananta.">
+  <meta name="keywords" content="artikel pertanian, tips combine harvester, perawatan tractor, mesin pertanian Lovol, Harvindo Sri Ananta">
+  <meta name="author" content="PT Harvindo Sri Ananta">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Artikel & Informasi Pertanian | Harvindo Sri Ananta">
+  <meta property="og:description" content="Berbagai informasi seputar mesin pertanian, tips perawatan combine harvester dan tractor, serta teknologi pertanian modern.">
+  <meta property="og:image" content="https://www.harvindosriananta.my.id/assets/images/logoperusahaan.png">
+  <meta property="og:url" content="https://www.harvindosriananta.my.id/artikel.html">
+  <meta property="og:site_name" content="PT Harvindo Sri Ananta">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.harvindosriananta.my.id/artikel.html">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans">
+
+<!-- HEADER -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <div class="flex items-center space-x-3">
+      <img src="assets/images/logoperusahaan.png" alt="Logo PT Harvindo Sri Ananta" class="h-10 w-auto">
+      <h1 class="text-xl font-bold">PT Harvindo Sri Ananta</h1>
+    </div>
+    <button id="menuBtn" class="md:hidden text-3xl focus:outline-none">
+      <span id="menuIcon">☰</span>
+    </button>
+    <nav class="hidden md:flex items-center space-x-8">
+      <a href="index.html" class="no-underline hover:text-green-400 transition">Beranda</a>
+      <a href="index.html#profil" class="no-underline hover:text-green-400 transition">Profil</a>
+      <div class="relative group">
+        <button class="no-underline focus:outline-none">Produk</button>
+        <div class="absolute left-0 top-full w-48 bg-white shadow-lg rounded
+                    opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                    transition duration-200">
+          <a href="produk-combine.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-green-400 transition">Combine Harvester</a>
+          <a href="produk-tractor.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-green-400 transition">Tractor</a>
+        </div>
+      </div>
+      <a href="artikel.html" class="no-underline text-green-500 font-semibold transition">Artikel</a>
+      <a href="index.html#hubungikami" class="no-underline hover:text-green-400 transition">Hubungi Kami</a>
+    </nav>
+  </div>
+  <div id="mobileMenu" class="md:hidden bg-white border-t shadow overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out">
+    <div class="px-6 py-4 space-y-4">
+      <a href="index.html" class="block hover:text-green-400 transition mobile-link">Beranda</a>
+      <a href="index.html#profil" class="block hover:text-green-400 transition mobile-link">Profil</a>
+      <div>
+        <p class="font-semibold mb-2">Produk</p>
+        <a href="produk-combine.html" class="block pl-4 mb-2 hover:text-green-400 transition">Combine Harvester</a>
+        <a href="produk-tractor.html" class="block pl-4 hover:text-green-400 transition">Tractor</a>
+      </div>
+      <a href="artikel.html" class="block text-green-500 font-semibold transition mobile-link">Artikel</a>
+      <a href="index.html#hubungikami" class="block hover:text-green-400 transition mobile-link">Hubungi Kami</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-gray-50 py-16">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h1 class="text-4xl font-bold mb-4">Artikel & Informasi</h1>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      Berbagai informasi seputar mesin pertanian, tips perawatan combine harvester dan tractor,
+      serta teknologi pertanian modern.
+    </p>
+  </div>
+</section>
+
+<!-- SEARCH BAR -->
+<section class="py-8 bg-white border-b">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="relative max-w-xl mx-auto">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Cari artikel..."
+        class="w-full border border-gray-300 rounded-lg py-3 pl-5 pr-12 text-sm focus:outline-none focus:border-green-400 transition"
+      >
+      <svg class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
+           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- LIST ARTIKEL -->
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div id="artikel-container" class="space-y-8">
+
+      <!-- ARTIKEL 1 -->
+      <a href="artikel/mengenal-teknologi-mesin-pertanian-lovol.html" class="artikel-item block">
+        <div class="flex flex-col md:flex-row bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+          <img src="assets/images/mengenal-teknologi-lovol.jpg" alt="Tips Merawat Combine Harvester" loading="lazy"
+               class="w-full md:w-64 h-48 object-contain">
+          <div class="p-6 flex flex-col justify-center">
+            <p class="text-sm text-gray-500 mb-2">05 Januari 2026 · 🕐 4 menit baca</p>
+            <h2 class="artikel-judul text-xl font-bold mb-2">Mengenal Teknologi Mesin Pertanian Lovol</h2>
+            <p class="artikel-desc text-gray-600">Lovol merupakan salah satu produsen mesin pertanian terkemuka yang menghadirkan teknologi modern untuk mendukung pertanian Indonesia.</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- ARTIKEL 2 -->
+      <a href="artikel/panduan-memilih-combine.html" class="artikel-item block">
+        <div class="flex flex-col md:flex-row bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+          <img src="assets/images/combine.png" alt="Keunggulan Combine Harvester Lovol" loading="lazy"
+               class="w-full md:w-64 h-48 object-cover">
+          <div class="p-6 flex flex-col justify-center">
+            <p class="text-sm text-gray-500 mb-2">15 Januari 2026 · 🕐 3 menit baca</p>
+            <h2 class="artikel-judul text-xl font-bold mb-2">Panduan Memilih Combine Harvester yang Tepat untuk Lahan Sawah</h2>
+            <p class="artikel-desc text-gray-600">Memilih combine harvester yang sesuai dengan kondisi lahan sangat penting agar pekerjaan pengolahan tanah lebih efisien dan hasil panen lebih maksimal.</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- ARTIKEL 3 -->
+      <a href="artikel/keunggulan-combine-harvester-lovol.html" class="artikel-item block">
+        <div class="flex flex-col md:flex-row bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+          <img src="assets/images/combine.png" alt="Panduan Memilih Traktor Sawah" loading="lazy"
+               class="w-full md:w-64 h-48 object-cover">
+          <div class="p-6 flex flex-col justify-center">
+            <p class="text-sm text-gray-500 mb-2">05 Februari 2026 · 🕐 4 menit baca</p>
+            <h2 class="artikel-judul text-xl font-bold mb-2">Keunggulan Combine Harvester Lovol Dibanding Mesin Panen Biasa</h2>
+            <p class="artikel-desc text-gray-600">Combine harvester Lovol memiliki teknologi modern yang mampu meningkatkan efisiensi panen serta menghemat tenaga kerja.</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- ARTIKEL 4 -->
+      <a href="artikel/cara-kerja-combine-harvester.html" class="artikel-item block">
+        <div class="flex flex-col md:flex-row bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+          <img src="assets/images/combine.png" alt="Cara Kerja Combine Harvester" loading="lazy"
+               class="w-full md:w-64 h-48 object-cover">
+          <div class="p-6 flex flex-col justify-center">
+            <p class="text-sm text-gray-500 mb-2">15 Februari 2026 · 🕐 3 menit baca</p>
+            <h2 class="artikel-judul text-xl font-bold mb-2">Cara Kerja Combine Harvester dalam Proses Panen Padi</h2>
+            <p class="artikel-desc text-gray-600">Combine harvester merupakan mesin pertanian modern yang mampu memotong, merontokkan, dan membersihkan padi dalam satu proses.</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- ARTIKEL 5 -->
+      <a href="artikel/tips-merawat-combine.html" class="artikel-item block">
+        <div class="flex flex-col md:flex-row bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+          <img src="assets/images/combine.png" alt="Mengenal Teknologi Lovol" loading="lazy"
+               class="w-full md:w-64 h-48 object-cover">
+          <div class="p-6 flex flex-col justify-center">
+            <p class="text-sm text-gray-500 mb-2">08 Maret 2026 · 🕐 3 menit baca</p>
+            <h2 class="artikel-judul text-xl font-bold mb-2">Tips Merawat Combine Harvester Agar Tetap Awet</h2>
+            <p class="artikel-desc text-gray-600">Perawatan rutin pada combine harvester sangat penting agar mesin tetap bekerja optimal saat musim panen tiba.</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- ARTIKEL 6 
+      <a href="artikel/artikel-06.html" class="artikel-item block">
+        <div class="flex flex-col md:flex-row bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+          <img src="assets/images/combine.png" alt="Mekanisasi Pertanian Modern" loading="lazy"
+               class="w-full md:w-64 h-48 object-cover">
+          <div class="p-6 flex flex-col justify-center">
+            <p class="text-sm text-gray-500 mb-2">28 Desember 2025 · 🕐 3 menit baca</p>
+            <h2 class="artikel-judul text-xl font-bold mb-2">Mekanisasi Pertanian: Solusi Efisiensi di Era Modern</h2>
+            <p class="artikel-desc text-gray-600">Mekanisasi pertanian menjadi kunci peningkatan produktivitas petani Indonesia dalam menghadapi tantangan kebutuhan pangan yang terus meningkat.</p>
+          </div>
+        </div>
+      </a> -->
+
+      <!-- Tambah artikel baru di sini dengan class "artikel-item block" -->
+
+    </div>
+
+    <!-- Tidak ditemukan -->
+    <div id="not-found" class="hidden text-center py-16 text-gray-400">
+      <p class="text-lg">Artikel tidak ditemukan 😔</p>
+      <p class="text-sm mt-2">Coba kata kunci lain</p>
+    </div>
+
+    <!-- PAGINATION -->
+    <div id="pagination" class="flex justify-center mt-12 gap-2"></div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black text-white pt-16 pb-6">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+    <div class="text-left">
+      <h3 class="text-xl font-semibold mb-4">PT Harvindo Sri Ananta</h3>
+      <p class="mb-2">Email : operational@harvindo.com</p>
+      <p class="mb-2">WhatsApp : 08xxxxxxxxxx</p>
+      <p>Alamat : Jl. Raya Rt 01/Rw 02 Pangulah Selatan, Kec. Kota Baru, Kab. Karawang, Jawa Barat 41374</p>
+    </div>
+    <div class="md:text-center">
+      <h3 class="text-xl font-semibold mb-4">Sosial Media</h3>
+      <a href="https://web.facebook.com/profile.php?id=100077341247896" target="_blank"
+         class="flex items-center justify-start md:justify-center mb-3 hover:text-green-400 transition">
+        <img src="assets/images/logofb.png" alt="Facebook" class="w-5 h-5 mr-2"> Facebook
+      </a>
+      <a href="https://instagram.com/username" target="_blank"
+         class="flex items-center justify-start md:justify-center mb-3 hover:text-green-400 transition">
+        <img src="assets/images/logoig.png" alt="Instagram" class="w-5 h-5 mr-2"> Instagram
+      </a>
+      <a href="https://www.tiktok.com/@harvindolovol" target="_blank"
+         class="flex items-center justify-start md:justify-center hover:text-green-400 transition">
+        <img src="assets/images/logotiktok.png" alt="TikTok" class="w-5 h-5 mr-2"> TikTok
+      </a>
+    </div>
+    <div class="text-left md:text-right">
+      <h3 class="text-xl font-semibold mb-4">Navigasi</h3>
+      <p class="mb-2"><a href="index.html#profil" class="no-underline hover:text-green-400 transition">Tentang Kami</a></p>
+      <p class="mb-2"><a href="index.html#layanan" class="no-underline hover:text-green-400 transition">Layanan</a></p>
+      <p><a href="index.html#hubungikami" class="no-underline hover:text-green-400 transition">Hubungi Kami</a></p>
+    </div>
+  </div>
+  <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400 text-sm">
+    Copyright© 2026 PT Harvindo Sri Ananta. All Rights Reserved.
+  </div>
+</footer>
+
+<script src="js/script.js" defer></script>
+</body>
+
+</html>
