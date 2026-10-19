@@ -142,3 +142,54 @@ if (tooltipEl) {
   setTimeout(showTooltip, 2000);
   setInterval(showTooltip, 2 * 60 * 1000);
 }
+
+// Buat Translate EN/ID
+async function loadLang(lang) {
+  try {
+    const res = await fetch(`/lang/${lang}.json`);
+    const data = await res.json();
+ 
+    // Update semua elemen dengan data-key
+    document.querySelectorAll('[data-key]').forEach(el => {
+      const key = el.dataset.key;
+      if (data[key]) el.textContent = data[key];
+    });
+ 
+    // Update placeholder input/textarea dengan data-key-placeholder
+    document.querySelectorAll('[data-key-placeholder]').forEach(el => {
+      const key = el.dataset.keyPlaceholder;
+      if (data[key]) el.placeholder = data[key];
+    });
+ 
+    // Simpan preferensi bahasa
+    localStorage.setItem('lang', lang);
+ 
+    // Update label tombol (kebalikan dari bahasa aktif)
+    const label = lang === 'id' ? '🌐 EN' : '🌐 ID';
+    const btnDesktop = document.getElementById('lang-btn');
+    const btnMobile  = document.getElementById('lang-btn-mobile');
+    if (btnDesktop) btnDesktop.textContent = label;
+    if (btnMobile)  btnMobile.textContent  = label;
+ 
+    // Update atribut lang di <html>
+    document.documentElement.lang = lang;
+ 
+  } catch (err) {
+    console.error('Gagal load bahasa:', err);
+  }
+}
+ 
+// Inisialisasi toggle — jalankan hanya jika tombol ada di halaman ini
+const langBtnDesktop = document.getElementById('lang-btn');
+const langBtnMobile  = document.getElementById('lang-btn-mobile');
+ 
+function toggleLang() {
+  const current = localStorage.getItem('lang') || 'id';
+  loadLang(current === 'id' ? 'en' : 'id');
+}
+ 
+if (langBtnDesktop) langBtnDesktop.addEventListener('click', toggleLang);
+if (langBtnMobile)  langBtnMobile.addEventListener('click', toggleLang);
+ 
+// Load bahasa saat halaman dibuka
+loadLang(localStorage.getItem('lang') || 'id');

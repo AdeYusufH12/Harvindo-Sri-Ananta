@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="F4mRnYM29K2D8f4oUO3zIEXGEvt89-_AWBhXRE2ymRE" />
-<title >Harvindo Sri Ananta</title>
+<title>Harvindo Sri Ananta</title>
 
 <link rel="icon" type="image/png" href="assets/images/logoperusahaan.png">
 
@@ -27,7 +27,7 @@
 <meta property="og:title" content="Harvindo Sri Ananta - Dealer Resmi Lovol Cikampek">
 <meta property="og:description" content="Dealer resmi Lovol di Cikampek, Karawang. Menyediakan Combine Harvester, Tractor, Spare Part dan Servis terpercaya.">
 <meta property="og:image" content="assets/images/logoperusahaan.png">
-<meta property="og:url" content="https://harvindosriananta.my.id">
+<meta property="og:url" content="https://www.harvindosriananta.my.id">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="id_ID">
 
@@ -38,7 +38,7 @@
 <meta name="twitter:image" content="assets/images/logoperusahaan.png">
 
 <!-- Canonical -->
-<link rel="canonical" href="https://harvindosriananta.my.id">
+<link rel="canonical" href="https://www.harvindosriananta.my.id">
 
 </head>
 
@@ -50,8 +50,8 @@
 
     <!-- Logo -->
     <div class="flex items-center space-x-3">
-      <img src="assets/images/logoperusahaan.png" 
-           alt="Logo PT Harvindo Sri Ananta" 
+      <img src="assets/images/logoperusahaan.png"
+           alt="Logo PT Harvindo Sri Ananta"
            class="h-10 w-auto">
       <h1 class="text-xl font-bold">
         Harvindo Sri Ananta
@@ -66,12 +66,12 @@
     <!-- Desktop Menu -->
     <nav class="hidden md:flex items-center space-x-8">
 
-      <a href="index.html" class="no-underline hover:text-green-400 transition ">Beranda</a>
-      <a href="#profil" class="no-underline hover:text-green-400 transition ">Profil</a>
+      <a data-key="nav_home" href="index.html" class="no-underline hover:text-green-400 transition">Beranda</a>
+      <a data-key="nav_profile" href="#profil" class="no-underline hover:text-green-400 transition">Profil</a>
 
       <!-- DROPDOWN PRODUK -->
       <div class="relative group">
-        <button class="no-underline focus:outline-none">
+        <button data-key="nav_product" class="no-underline focus:outline-none">
           Produk
         </button>
 
@@ -80,21 +80,27 @@
                     group-hover:opacity-100 group-hover:visible
                     transition duration-200">
 
-          <a href="produk-combine.html"
-             class="block px-4 py-2 hover:bg-gray-100 hover:text-green-400 transition ">
+          <a data-key="nav_product_combine" href="produk-combine.html"
+             class="block px-4 py-2 hover:bg-gray-100 hover:text-green-400 transition">
              Combine Harvester
           </a>
 
-          <a href="produk-tractor.html"
-             class="block px-4 py-2 hover:bg-gray-100 hover:text-green-400 transition ">
+          <a data-key="nav_product_tractor" href="produk-tractor.html"
+             class="block px-4 py-2 hover:bg-gray-100 hover:text-green-400 transition">
              Tractor
           </a>
         </div>
       </div>
 
-      <a href="#layanan" class="no-underline hover:text-green-400 transition ">Layanan</a>
-      <a href="artikel.html" class="no-underline hover:text-green-400 transition ">Artikel</a>
-      <a href="#hubungikami" class="no-underline hover:text-green-400 transition ">Hubungi Kami</a>
+      <a data-key="nav_service" href="#layanan" class="no-underline hover:text-green-400 transition">Layanan</a>
+      <a data-key="nav_article" href="artikel.html" class="no-underline hover:text-green-400 transition">Artikel</a>
+      <a data-key="nav_contact" href="#hubungikami" class="no-underline hover:text-green-400 transition">Hubungi Kami</a>
+
+      <!-- Tombol Toggle Bahasa -->
+      <button id="lang-btn"
+              class="border border-gray-400 text-gray-700 text-sm px-3 py-1 rounded-full hover:bg-green-600 hover:text-white hover:border-green-600 transition duration-200">
+        🌐 EN
+      </button>
 
     </nav>
 
@@ -108,23 +114,29 @@
 
     <div class="px-6 py-4 space-y-4">
 
-      <a href="index.html" class="block hover:text-green-400 transition mobile-link">Beranda</a>
-      <a href="index.html#profil" class="block hover:text-green-400 transition mobile-link">Profil</a>
+      <a data-key="nav_home" href="index.html" class="block hover:text-green-400 transition mobile-link">Beranda</a>
+      <a data-key="nav_profile" href="index.html#profil" class="block hover:text-green-400 transition mobile-link">Profil</a>
 
       <!-- Mobile Produk -->
       <div>
-        <p class="font-semibold mb-2">Produk</p>
-        <a href="produk-combine.html" class="block pl-4 mb-2 hover:text-green-400 transition">
+        <p data-key="nav_product" class="font-semibold mb-2">Produk</p>
+        <a data-key="nav_product_combine" href="produk-combine.html" class="block pl-4 mb-2 hover:text-green-400 transition">
           Combine Harvester
         </a>
-        <a href="produk-tractor.html" class="block pl-4 hover:text-green-400 transition">
+        <a data-key="nav_product_tractor" href="produk-tractor.html" class="block pl-4 hover:text-green-400 transition">
           Tractor
         </a>
       </div>
 
-      <a href="index.html#layanan" class="block hover:text-green-400 transition mobile-link">Layanan</a>
-      <a href="artikel.html" class="block hover:text-green-400 transition mobile-link">Artikel</a>
-      <a href="index.html#hubungikami" class="block hover:text-green-400 transition mobile-link">Hubungi Kami</a>
+      <a data-key="nav_service" href="index.html#layanan" class="block hover:text-green-400 transition mobile-link">Layanan</a>
+      <a data-key="nav_article" href="artikel.html" class="block hover:text-green-400 transition mobile-link">Artikel</a>
+      <a data-key="nav_contact" href="index.html#hubungikami" class="block hover:text-green-400 transition mobile-link">Hubungi Kami</a>
+
+      <!-- Tombol Toggle Bahasa (Mobile) -->
+      <button id="lang-btn-mobile"
+              class="border border-gray-400 text-gray-700 text-sm px-3 py-1 rounded-full hover:bg-green-600 hover:text-white hover:border-green-600 transition duration-200">
+        🌐 EN
+      </button>
 
     </div>
 
@@ -133,7 +145,7 @@
 </header>
 
 <!-- HERO -->
-<section 
+<section
   class="h-screen bg-cover bg-center relative flex items-center"
   style="background-image: url('assets/images/gambarHero.jpeg');">
 
@@ -145,20 +157,20 @@
 
     <div class="max-w-2xl text-white">
 
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-        Solusi Combine Harvester Terpercaya 
+      <h1 data-key="hero_title" class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        Solusi Combine Harvester Terpercaya
         untuk Petani Indonesia
       </h1>
 
-      <p class="text-lg mb-8 text-gray-200">
-        Dealer combine harvester dengan standar kualitas tinggi 
+      <p data-key="hero_desc" class="text-lg mb-8 text-gray-200">
+        Dealer combine harvester dengan standar kualitas tinggi
         dan dukungan layanan purna jual terpercaya.
       </p>
 
       <a href="https://wa.me/6281273868385"
-         class="inline-block bg-green-600 hover:bg-green-700 
+         class="inline-block bg-green-600 hover:bg-green-700
                 text-white px-6 py-3 rounded-lg font-semibold transition">
-         Hubungi Kami
+         <span data-key="hero_btn">Hubungi Kami</span>
       </a>
 
     </div>
@@ -171,11 +183,11 @@
 <section id="profil" class="py-16 container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
   <img src="assets/images/profilecompany.png" class="rounded-lg shadow hover:scale-110 transition duration-500">
   <div>
-    <h3 class="text-2xl font-bold mb-4">Tentang Kami</h3>
-    <p>
+    <h3 data-key="about_title" class="text-2xl font-bold mb-4">Tentang Kami</h3>
+    <p data-key="about_desc1">
       PT Harvindo Sri Ananta merupakan Dealer Resmi Lovol mesin pertanian terpercaya yang melayani petani dan kelompok tani di Seluruh Indonesia.
     </p>
-    <p>
+    <p data-key="about_desc2">
         Kami menyediakan Combine Harvester dan Tractor berkualitas dengan dukungan layanan profesional.
     </p>
   </div>
@@ -184,25 +196,25 @@
 <!-- LAYANAN -->
 <section id="layanan" class="bg-gray-100 py-16">
   <div class="container mx-auto px-6 text-center">
-    <h3 class="text-2xl font-bold mb-10">Layanan Kami</h3>
+    <h3 data-key="service_title" class="text-2xl font-bold mb-10">Layanan Kami</h3>
     <div class="grid md:grid-cols-3 gap-8">
       <div class="bg-white p-6 rounded shadow hover:-translate-y-2 transition">
-        <h4 class="font-semibold mb-2">Penjualan Unit</h4>
-        <p>Penyediaan unit combine dan tractor berkualitas.</p>
+        <h4 data-key="service_1_title" class="font-semibold mb-2">Penjualan Unit</h4>
+        <p data-key="service_1_desc">Penyediaan unit combine dan tractor berkualitas.</p>
         <a href="https://wa.me/6281273868385" target="_blank" class="inline-block mt-4 px-5 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition duration-300">
-           Hubungi via WhatsApp</a>
+           <span data-key="service_btn">Hubungi via WhatsApp</span></a>
       </div>
       <div class="bg-white p-6 rounded shadow hover:-translate-y-2 transition">
-        <h4 class="font-semibold mb-2">Service & Sparepart</h4>
-        <p>Dukungan teknis dan ketersediaan suku cadang.</p>
+        <h4 data-key="service_2_title" class="font-semibold mb-2">Service & Sparepart</h4>
+        <p data-key="service_2_desc">Dukungan teknis dan ketersediaan suku cadang.</p>
         <a href="https://wa.me/6285766144292" target="_blank" class="inline-block mt-4 px-5 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition duration-300">
-           Hubungi via WhatsApp</a>
+           <span data-key="service_btn">Hubungi via WhatsApp</span></a>
       </div>
       <div class="bg-white p-6 rounded shadow hover:-translate-y-2 transition">
-        <h4 class="font-semibold mb-2">Konsultasi</h4>
-        <p>Pendampingan pemilihan mesin sesuai kebutuhan lahan.</p>
+        <h4 data-key="service_3_title" class="font-semibold mb-2">Konsultasi</h4>
+        <p data-key="service_3_desc">Pendampingan pemilihan mesin sesuai kebutuhan lahan.</p>
         <a href="https://wa.me/6281273868385" target="_blank" class="inline-block mt-4 px-5 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition duration-300">
-           Hubungi via WhatsApp</a>
+           <span data-key="service_btn">Hubungi via WhatsApp</span></a>
       </div>
     </div>
   </div>
@@ -214,10 +226,10 @@
 
     <!-- Heading -->
     <div class="text-center mb-14">
-      <h2 class="text-2xl md:text-4xl font-bold mb-10">
+      <h2 data-key="gallery_title" class="text-2xl md:text-4xl font-bold mb-10">
         Dokumentasi Kegiatan
       </h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">
+      <p data-key="gallery_desc" class="text-gray-600 max-w-2xl mx-auto">
         Dokumentasi aktivitas distribusi, servis, dan survei lapangan PT Harvindo Sri Ananta.
       </p>
     </div>
@@ -225,55 +237,38 @@
     <!-- Grid Gallery -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
-      <!-- Item 1 -->
       <div class="overflow-hidden rounded-xl shadow group">
         <img src="assets/images/foto1.jpg"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
-
-      <!-- Item 2 -->
       <div class="overflow-hidden rounded-xl shadow group">
         <img src="assets/images/foto2.jpg"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
-
-      <!-- Item 3 -->
       <div class="overflow-hidden rounded-xl shadow group">
         <img src="assets/images/foto3.jpg"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
-
-      <!-- Item 4 -->
       <div class="overflow-hidden rounded-xl shadow group">
         <img src="assets/images/foto4.jpg"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
-
-      <!-- Item 5 -->
       <div class="overflow-hidden rounded-xl shadow group">
         <img src="assets/images/foto5.jpg"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
-
-      <!-- Item 6 -->
       <div class="overflow-hidden rounded-xl shadow group">
         <img src="assets/images/foto6.jpg"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
-
-      <!-- Item 7 -->
       <div class="overflow-hidden rounded-xl shadow group">
         <img src="assets/images/foto7.jpg"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
-
-      <!-- Item 8-->
       <div class="overflow-hidden rounded-xl shadow group">
         <img src="assets/images/foto8.jpg"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
-
-      <!-- Item 9 -->
       <div class="overflow-hidden rounded-xl shadow group">
         <img src="assets/images/foto9.jpg"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
@@ -286,43 +281,43 @@
 
 <!-- TESTIMONI -->
 <section id="testimoni" class="py-16 overflow-hidden">
-  <h3 class="text-2xl font-bold text-center mb-8">Testimoni</h3>
+  <h3 data-key="testimoni_title" class="text-2xl font-bold text-center mb-8">Testimoni</h3>
   <div class="flex space-x-6 marquee w-max">
     <div class="bg-white p-6 rounded shadow w-72">
-      <p>"Sejak pakai Combine Harvester Lovol, panen jadi jauh lebih cepat dan hemat tenaga. Hasilnya juga bersih."</p>
-      <h5 class="mt-4 font-semibold">Tatang - Subang</h5>
+      <p data-key="testimoni_1">"Sejak pakai Combine Harvester Lovol, panen jadi jauh lebih cepat dan hemat tenaga. Hasilnya juga bersih."</p>
+      <h5 data-key="testimoni_1_name" class="mt-4 font-semibold">Tatang - Subang</h5>
     </div>
     <div class="bg-white p-6 rounded shadow w-72">
-      <p>"Mesinnya kuat dan stabil di sawah berlumpur. Cocok untuk kondisi lahan kami."</p>
-      <h5 class="mt-4 font-semibold">Mang Ama - Karawang</h5>
+      <p data-key="testimoni_2">"Mesinnya kuat dan stabil di sawah berlumpur. Cocok untuk kondisi lahan kami."</p>
+      <h5 data-key="testimoni_2_name" class="mt-4 font-semibold">Mang Ama - Karawang</h5>
     </div>
     <div class="bg-white p-6 rounded shadow w-72">
-      <p>"BBM lebih irit dibanding mesin sebelumnya. Sangat membantu mengurangi biaya operasional"</p>
-      <h5 class="mt-4 font-semibold">Hj Hasan - Indramayu</h5>
+      <p data-key="testimoni_3">"BBM lebih irit dibanding mesin sebelumnya. Sangat membantu mengurangi biaya operasional"</p>
+      <h5 data-key="testimoni_3_name" class="mt-4 font-semibold">Hj Hasan - Indramayu</h5>
     </div>
     <div class="bg-white p-6 rounded shadow w-72">
-      <p>"Perawatannya mudah dan sparepart gampang dicari. Jadi lebih tenang saat musim panen."</p>
-      <h5 class="mt-4 font-semibold">Jembar - Subang</h5>
+      <p data-key="testimoni_4">"Perawatannya mudah dan sparepart gampang dicari. Jadi lebih tenang saat musim panen."</p>
+      <h5 data-key="testimoni_4_name" class="mt-4 font-semibold">Jembar - Subang</h5>
     </div>
     <div class="bg-white p-6 rounded shadow w-72">
-      <p>"Produktivitas meningkat signifikan. Sekarang panen bisa selesai lebih cepat dari biasanya."</p>
-      <h5 class="mt-4 font-semibold">Lasmino - Lamongan</h5>
+      <p data-key="testimoni_5">"Produktivitas meningkat signifikan. Sekarang panen bisa selesai lebih cepat dari biasanya."</p>
+      <h5 data-key="testimoni_5_name" class="mt-4 font-semibold">Lasmino - Lamongan</h5>
     </div>
     <div class="bg-white p-6 rounded shadow w-72">
-      <p>"Operator cepat beradaptasi karena pengoperasiannya simpel dan nyaman."</p>
-      <h5 class="mt-4 font-semibold">Sri - Bojonegoro</h5>
+      <p data-key="testimoni_6">"Operator cepat beradaptasi karena pengoperasiannya simpel dan nyaman."</p>
+      <h5 data-key="testimoni_6_name" class="mt-4 font-semibold">Sri - Bojonegoro</h5>
     </div>
     <div class="bg-white p-6 rounded shadow w-72">
-      <p>"Kualitas potongan rapi dan kehilangan gabah sangat minim."</p>
-      <h5 class="mt-4 font-semibold">Didik - Bojonegoro</h5>
+      <p data-key="testimoni_7">"Kualitas potongan rapi dan kehilangan gabah sangat minim."</p>
+      <h5 data-key="testimoni_7_name" class="mt-4 font-semibold">Didik - Bojonegoro</h5>
     </div>
     <div class="bg-white p-6 rounded shadow w-72">
-      <p>"Pelayanan dealer resmi Lovol juga responsif dan profesional."</p>
-      <h5 class="mt-4 font-semibold">Gigih - Lamongan</h5>
+      <p data-key="testimoni_8">"Pelayanan dealer resmi Lovol juga responsif dan profesional."</p>
+      <h5 data-key="testimoni_8_name" class="mt-4 font-semibold">Gigih - Lamongan</h5>
     </div>
     <div class="bg-white p-6 rounded shadow w-72">
-      <p>"Investasi yang sangat worth it untuk kelompok tani kami."</p>
-      <h5 class="mt-4 font-semibold">Puri - Subang</h5>
+      <p data-key="testimoni_9">"Investasi yang sangat worth it untuk kelompok tani kami."</p>
+      <h5 data-key="testimoni_9_name" class="mt-4 font-semibold">Puri - Subang</h5>
     </div>
   </div>
 </section>
@@ -330,14 +325,14 @@
 <!-- HUBUNGI -->
 <section id="hubungikami" class="bg-gray-100 py-16">
   <div class="container mx-auto px-6 max-w-5xl">
-    <h3 class="text-2xl font-bold mb-10 text-center">Hubungi Kami</h3>
-    
+    <h3 data-key="contact_title" class="text-2xl font-bold mb-10 text-center">Hubungi Kami</h3>
+
     <div class="grid md:grid-cols-2 gap-8 items-start">
 
       <!-- Google Maps -->
       <div class="rounded-lg overflow-hidden shadow-lg h-full">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15859.651300232175!2d107.47133277903927!3d-6.40523157052545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696da63b7c63c9%3A0x26ca36ee2032d83a!2sDealer%20Resmi%20Lovol%20-%20Harvindo%20Sri%20Ananta!5e0!3m2!1sid!2sid!4v1788589408103!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15859.651300232175!2d107.47133277903927!3d-6.40523157052545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696da63b7c63c9%3A0x26ca36ee2032d83a!2sDealer%20Resmi%20Lovol%20-%20Harvindo%20Sri%20Ananta!5e0!3m2!1sid!2sid!4v1788589408103!5m2!1sid!2sid"
           width="100%"
           height="450"
           style="border:0;"
@@ -351,14 +346,14 @@
       <div class="bg-white p-8 rounded-lg shadow-lg">
         <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
           <input type="hidden" name="access_key" value="88e9c3e1-6465-4156-8a6c-b57c42b9f33d">
-          <input type="text" name="Name" placeholder="Nama" required 
+          <input type="text" name="Name" data-key-placeholder="contact_name" placeholder="Nama" required
                  class="w-full p-3 border rounded-lg focus:outline-none focus:border-green-400">
-          <input type="email" name="Email" placeholder="Email" required 
+          <input type="email" name="Email" data-key-placeholder="contact_email" placeholder="Email" required
                  class="w-full p-3 border rounded-lg focus:outline-none focus:border-green-400">
-          <textarea placeholder="Pesan" name="pesan" required rows="5"
+          <textarea data-key-placeholder="contact_message" placeholder="Pesan" name="pesan" required rows="5"
                     class="w-full p-3 border rounded-lg focus:outline-none focus:border-green-400"></textarea>
           <button class="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-lg w-full transition">
-            Kirim
+            <span data-key="contact_btn">Kirim</span>
           </button>
         </form>
       </div>
@@ -374,85 +369,72 @@
 
     <!-- Kolom 1 -->
     <div class="text-left">
-      <h3 class="text-xl font-semibold mb-4">
+      <h3 data-key="footer_company" class="text-xl font-semibold mb-4">
         PT Harvindo Sri Ananta
       </h3>
-
-      <p class="flex items-center mb-2">
+      <p data-key="footer_email" class="flex items-center mb-2">
         Email : operational@harvindo.com
       </p>
-
-      <p class="flex items-center mb-2">
+      <p data-key="footer_wa" class="flex items-center mb-2">
         WhatsApp : 0812-3177-3188
       </p>
-
-      <p class="flex items-center">
+      <p data-key="footer_address" class="flex items-center">
         Alamat : Jl. Raya Rt 01/Rw 02 Pangulah Selatan, Kec. Kota Baru, Kab. Karawang, Jawa Barat 41374
       </p>
     </div>
 
     <!-- Kolom 2 -->
     <div class="md:text-center">
-  <h3 class="text-xl font-semibold mb-4">Sosial Media</h3>
+      <h3 data-key="footer_social" class="text-xl font-semibold mb-4">Sosial Media</h3>
 
-  <a href="https://web.facebook.com/profile.php?id=61589167812106"
-     target="_blank"
-     class="flex items-center justify-start md:justify-center mb-3 hover:text-green-400 transition">
+      <a href="https://web.facebook.com/profile.php?id=61589167812106"
+         target="_blank"
+         class="flex items-center justify-start md:justify-center mb-3 hover:text-green-400 transition">
+        <img src="assets/images/logofb.png" alt="Facebook" class="w-5 h-5 mr-2">
+        Facebook
+      </a>
 
-    <img src="assets/images/logofb.png"
-         alt="Facebook"
-         class="w-5 h-5 mr-2">
-    Facebook
-  </a>
+      <a href="https://www.instagram.com/harvindo_lovol/"
+         target="_blank"
+         class="flex items-center justify-start md:justify-center mb-3 hover:text-green-400 transition">
+        <img src="assets/images/logoig.png" alt="Instagram" class="w-5 h-5 mr-2">
+        Instagram
+      </a>
 
-  <a href="https://www.instagram.com/harvindo_lovol/"
-     target="_blank"
-     class="flex items-center justify-start md:justify-center mb-3 hover:text-green-400 transition">
-
-    <img src="assets/images/logoig.png"
-         alt="Instagram"
-         class="w-5 h-5 mr-2">
-    Instagram
-  </a>
-
-  <a href="https://www.tiktok.com/@harvindolovol"
-     target="_blank"
-     class="flex items-center justify-start md:justify-center hover:text-green-400 transition">
-
-    <img src="assets/images/logotiktok.png"
-         alt="TikTok"
-         class="w-5 h-5 mr-2">
-    TikTok
-  </a>
-</div>
+      <a href="https://www.tiktok.com/@harvindolovol"
+         target="_blank"
+         class="flex items-center justify-start md:justify-center hover:text-green-400 transition">
+        <img src="assets/images/logotiktok.png" alt="TikTok" class="w-5 h-5 mr-2">
+        TikTok
+      </a>
+    </div>
 
     <!-- Kolom 3 -->
     <div class="text-left md:text-right">
-      <h3 class="text-xl font-semibold mb-4">Navigasi</h3>
-
-      <p class="mb-2"><a href="#profil" class="no-underline hover:text-green-400 transition">Tentang Kami</a></p>
-      <p class="mb-2"><a href="#layanan" class="no-underline hover:text-green-400 transition">Layanan</a></p>
-      <p><a href="#hubungikami" class="no-underline hover:text-green-400 transition">Hubungi Kami</a></p>
+      <h3 data-key="footer_nav" class="text-xl font-semibold mb-4">Navigasi</h3>
+      <p class="mb-2"><a data-key="footer_nav_about" href="#profil" class="no-underline hover:text-green-400 transition">Tentang Kami</a></p>
+      <p class="mb-2"><a data-key="footer_nav_service" href="#layanan" class="no-underline hover:text-green-400 transition">Layanan</a></p>
+      <p><a data-key="footer_nav_contact" href="#hubungikami" class="no-underline hover:text-green-400 transition">Hubungi Kami</a></p>
     </div>
 
   </div>
 
   <!-- Garis -->
   <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400 text-sm">
-    Copyright© 2026 PT Harvindo Sri Ananta. All Rights Reserved.
+    <span data-key="footer_copyright">Copyright© 2026 PT Harvindo Sri Ananta. All Rights Reserved.</span>
   </div>
 
 </footer>
 
 <!-- Floating WhatsApp Button -->
 <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
-  
+
   <!-- Label tooltip -->
-  <div id="wa-tooltip" 
+  <div id="wa-tooltip"
        class="bg-white text-gray-700 text-sm font-medium px-4 py-2 rounded-lg shadow-lg
               transition-all duration-500 opacity-0 translate-x-4"
        style="white-space: nowrap;">
-    Butuh bantuan? 💬
+    <span data-key="wa_tooltip">Butuh bantuan? 💬</span>
   </div>
 
   <!-- Button WA -->
