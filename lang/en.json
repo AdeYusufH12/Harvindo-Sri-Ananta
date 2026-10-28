@@ -65,5 +65,15 @@
   "footer_nav_contact": "Contact Us",
   "footer_copyright": "Copyright© 2026 PT Harvindo Sri Ananta. All Rights Reserved.",
 
-  "wa_tooltip": "Need help? 💬"
+  "wa_tooltip": "Need help? 💬",
+
+  "faq_title": "Frequently Asked Questions (FAQ)",
+  "faq_1_q": "Do you provide after-sales service to the field?",
+  "faq_1_a": "Yes, our mechanics are ready to come directly to your field location to perform service or repairs if there is a machine issue during harvest season.",
+  "faq_2_q": "How is the availability of Lovol spare parts?",
+  "faq_2_a": "As an official dealer, we guarantee the availability of genuine parts for all types of Combine Harvesters and Tractors that we sell.",
+  "faq_3_q": "Is it possible to purchase on credit/installment?",
+  "faq_3_a": "Yes, we offer both cash and credit purchase options through financing institutions that partner with us. Contact our team for more information.",
+  "faq_4_q": "How long is the warranty for purchased machines?",
+  "faq_4_a": "Every unit we sell comes with an official Lovol warranty. Details on the warranty period can be confirmed directly with our sales team."
 }
