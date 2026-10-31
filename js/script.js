@@ -236,3 +236,57 @@ if (galleryMain) {
 
   slideshowTimer = setInterval(autoSlide, 4000);
 }
+
+// Lightbox Tractor
+if (document.getElementById('lightbox')) {
+  var lbIndex = 0;
+  var lbImages = [
+    'assets/images/produk-tractor-1.jpeg',
+    'assets/images/produk-tractor-2.jpeg',
+    'assets/images/produk-tractor-3.jpeg',
+    'assets/images/produk-tractor-4.jpeg'
+  ];
+
+  window.lightboxOpen = function(index) {
+    lbIndex = index;
+    var lb = document.getElementById('lightbox');
+    lb.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    lightboxUpdate();
+  };
+
+  window.lightboxClose = function(e) {
+    if (e && e.target !== document.getElementById('lightbox')) return;
+    var lb = document.getElementById('lightbox');
+    lb.style.display = 'none';
+    document.body.style.overflow = '';
+  };
+
+  window.lightboxNav = function(dir, e) {
+    if (e) e.stopPropagation();
+    lbIndex = (lbIndex + dir + lbImages.length) % lbImages.length;
+    lightboxUpdate();
+  };
+
+  window.lightboxGoTo = function(index, e) {
+    if (e) e.stopPropagation();
+    lbIndex = index;
+    lightboxUpdate();
+  };
+
+  function lightboxUpdate() {
+    document.getElementById('lightbox-img').src = lbImages[lbIndex];
+    var dots = document.querySelectorAll('.lightbox-dot');
+    dots.forEach(function(d, i) {
+      d.style.background = i === lbIndex ? 'white' : 'rgba(255,255,255,0.4)';
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    var lb = document.getElementById('lightbox');
+    if (lb.style.display === 'none') return;
+    if (e.key === 'ArrowRight') lightboxNav(1, null);
+    if (e.key === 'ArrowLeft') lightboxNav(-1, null);
+    if (e.key === 'Escape') { lb.style.display = 'none'; document.body.style.overflow = ''; }
+  });
+}

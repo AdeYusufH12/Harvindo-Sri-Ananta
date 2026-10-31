@@ -160,9 +160,10 @@ style="background-image: url('assets/images/herotractor.png');">
       <!-- Main Image -->
       <div class="relative overflow-hidden rounded-lg shadow mb-3">
         <img id="gallery-main"
-             src="assets/images/produk-tractor-1.jpg"
+             src="assets/images/produk-tractor-1.jpeg"
              alt="Tractor Lovol TB 554-b"
-             class="w-full h-72 md:h-80 object-cover transition-opacity duration-300">
+             onclick="lightboxOpen(currentIndex)"
+             class="w-full h-72 md:h-80 object-cover transition-opacity duration-300 cursor-zoom-in">
       </div>
 
       <!-- Thumbnails -->
@@ -534,6 +535,44 @@ style="background-image: url('assets/images/herotractor.png');">
   }
 }
 </script>
+
+<!-- LIGHTBOX -->
+<div id="lightbox"
+     class="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center"
+     style="display:none !important;"
+     onclick="lightboxClose(event)">
+
+  <!-- Tombol Tutup -->
+  <button onclick="lightboxClose()"
+          class="absolute top-4 right-5 text-white text-4xl leading-none z-10 hover:text-gray-300 transition"
+          style="background:none;border:none;cursor:pointer;">✕</button>
+
+  <!-- Panah Kiri -->
+  <button onclick="lightboxNav(-1, event)"
+          class="absolute left-3 md:left-8 text-white text-5xl leading-none z-10 hover:text-gray-300 transition select-none"
+          style="background:none;border:none;cursor:pointer;">&#8249;</button>
+
+  <!-- Foto Besar -->
+  <img id="lightbox-img"
+       src=""
+       alt="Tractor Lovol TB 554-b"
+       class="max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl object-contain"
+       onclick="event.stopPropagation()">
+
+  <!-- Panah Kanan -->
+  <button onclick="lightboxNav(1, event)"
+          class="absolute right-3 md:right-8 text-white text-5xl leading-none z-10 hover:text-gray-300 transition select-none"
+          style="background:none;border:none;cursor:pointer;">&#8250;</button>
+
+  <!-- Indikator titik -->
+  <div class="absolute bottom-5 flex gap-2">
+    <span class="lightbox-dot w-2 h-2 rounded-full bg-white/40 cursor-pointer transition" onclick="lightboxGoTo(0, event)"></span>
+    <span class="lightbox-dot w-2 h-2 rounded-full bg-white/40 cursor-pointer transition" onclick="lightboxGoTo(1, event)"></span>
+    <span class="lightbox-dot w-2 h-2 rounded-full bg-white/40 cursor-pointer transition" onclick="lightboxGoTo(2, event)"></span>
+    <span class="lightbox-dot w-2 h-2 rounded-full bg-white/40 cursor-pointer transition" onclick="lightboxGoTo(3, event)"></span>
+  </div>
+
+</div>
 
 <script src="js/script.js" defer></script>
 
