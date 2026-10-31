@@ -155,7 +155,40 @@ style="background-image: url('assets/images/herotractor.png');">
 <section class="py-16 bg-gray-50">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-    <img src="assets/images/tractor.png" class="rounded-lg shadow">
+    <!-- IMAGE GALLERY -->
+    <div>
+      <!-- Main Image -->
+      <div class="relative overflow-hidden rounded-lg shadow mb-3">
+        <img id="gallery-main"
+             src="assets/images/produk-tractor-1.jpg"
+             alt="Tractor Lovol TB 554-b"
+             class="w-full h-72 md:h-80 object-cover transition-opacity duration-300">
+      </div>
+
+      <!-- Thumbnails -->
+      <div class="grid grid-cols-4 gap-2">
+        <img src="assets/images/produk-tractor-1.jpeg"
+             alt="Foto 1"
+             onclick="gallerySwitch(0)"
+             id="thumb-0"
+             class="gallery-thumb w-full h-16 object-cover rounded cursor-pointer border-2 border-green-500 opacity-100 transition">
+        <img src="assets/images/produk-tractor-2.jpeg"
+             alt="Foto 2"
+             onclick="gallerySwitch(1)"
+             id="thumb-1"
+             class="gallery-thumb w-full h-16 object-cover rounded cursor-pointer border-2 border-transparent opacity-60 hover:opacity-100 transition">
+        <img src="assets/images/produk-tractor-3.jpeg"
+             alt="Foto 3"
+             onclick="gallerySwitch(2)"
+             id="thumb-2"
+             class="gallery-thumb w-full h-16 object-cover rounded cursor-pointer border-2 border-transparent opacity-60 hover:opacity-100 transition">
+        <img src="assets/images/produk-tractor-4.jpeg"
+             alt="Foto 4"
+             onclick="gallerySwitch(3)"
+             id="thumb-3"
+             class="gallery-thumb w-full h-16 object-cover rounded cursor-pointer border-2 border-transparent opacity-60 hover:opacity-100 transition">
+      </div>
+    </div>
 
     <div>
       <h2 data-key="tractor_spec_title" class="text-3xl font-bold mb-6">Spesifikasi Utama Tractor Tb 554-b</h2>
@@ -483,7 +516,7 @@ style="background-image: url('assets/images/herotractor.png');">
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Tractor Lovol TB 554-b",
-  "image": "https://www.harvindosriananta.my.id/assets/images/tractor.png",
+  "image": "https://www.harvindosriananta.my.id/assets/images/produk-tractor-1.jpg",
   "description": "Tractor Lovol TB 554-b dengan tenaga 55HP, mesin 4 silinder diesel, transmisi 12 gigi maju dan mundur, power steering, dan kabin ROPS. Cocok untuk pengolahan sawah dan lahan kering.",
   "brand": {
     "@type": "Brand",

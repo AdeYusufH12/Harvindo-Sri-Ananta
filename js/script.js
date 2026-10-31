@@ -193,3 +193,46 @@ if (langBtnMobile)  langBtnMobile.addEventListener('click', toggleLang);
  
 // Load bahasa saat halaman dibuka
 loadLang(localStorage.getItem('lang') || 'id');
+
+
+// Galery Script untuk Produk Tractor
+// Gallery Tractor
+var galleryMain = document.getElementById('gallery-main');
+if (galleryMain) {
+  var galleryImages = [
+    'assets/images/produk-tractor-1.jpeg',
+    'assets/images/produk-tractor-2.jpeg',
+    'assets/images/produk-tractor-3.jpeg',
+    'assets/images/produk-tractor-4.jpeg'
+  ];
+  var currentIndex = 0;
+  var slideshowTimer;
+
+  window.gallerySwitch = function(index) {
+    galleryMain.style.opacity = '0';
+    setTimeout(function() {
+      galleryMain.src = galleryImages[index];
+      galleryMain.style.opacity = '1';
+    }, 200);
+    for (var i = 0; i < galleryImages.length; i++) {
+      var thumb = document.getElementById('thumb-' + i);
+      if (i === index) {
+        thumb.classList.add('border-green-500', 'opacity-100');
+        thumb.classList.remove('border-transparent', 'opacity-60');
+      } else {
+        thumb.classList.remove('border-green-500', 'opacity-100');
+        thumb.classList.add('border-transparent', 'opacity-60');
+      }
+    }
+    currentIndex = index;
+    clearInterval(slideshowTimer);
+    slideshowTimer = setInterval(autoSlide, 4000);
+  };
+
+  function autoSlide() {
+    var next = (currentIndex + 1) % galleryImages.length;
+    gallerySwitch(next);
+  }
+
+  slideshowTimer = setInterval(autoSlide, 4000);
+}
