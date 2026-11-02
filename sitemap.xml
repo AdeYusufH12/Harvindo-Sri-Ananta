@@ -68,4 +68,18 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://www.harvindosriananta.my.id/artikel/sewa-vs-beli-combine-harvester.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+<url>
+    <loc>https://www.harvindosriananta.my.id/artikel/combine-harvester-bisa-panen-apa-saja.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
