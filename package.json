@@ -1,0 +1,25 @@
+{
+  "name": "harvindo-sri-ananta",
+  "version": "1.0.0",
+  "description": "Website resmi PT Harvindo Sri Ananta, dealer resmi mesin pertanian **Lovol** yang melayani petani dan kelompok tani di seluruh Indonesia.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdeYusufH12/Harvindo-Sri-Ananta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AdeYusufH12/Harvindo-Sri-Ananta/issues"
+  },
+  "homepage": "https://github.com/AdeYusufH12/Harvindo-Sri-Ananta#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

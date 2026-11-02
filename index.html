@@ -4,15 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="F4mRnYM29K2D8f4oUO3zIEXGEvt89-_AWBhXRE2ymRE" />
-<title>Harvindo Sri Ananta</title>
+<title>Dealer Combine Harvester Lovol Cikampek | Harvindo Sri Ananta</title>
 
 <link rel="icon" type="image/png" href="assets/images/logoperusahaan.png">
 
 <!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <!-- Tailwind CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="/css/tailwind.css">
 
 <!-- Script CSS -->
 <link rel="stylesheet" href="css/style.css">
@@ -26,8 +28,8 @@
 <!-- Open Graph (untuk tampilan di Facebook & WhatsApp) -->
 <meta property="og:title" content="Harvindo Sri Ananta - Dealer Resmi Lovol Cikampek">
 <meta property="og:description" content="Dealer resmi Lovol di Cikampek, Karawang. Menyediakan Combine Harvester, Tractor, Spare Part dan Servis terpercaya.">
-<meta property="og:image" content="assets/images/logoperusahaan.png">
-<meta property="og:url" content="https://www.harvindosriananta.my.id">
+<meta property="og:image" content="https://www.harvindosriananta.my.id/assets/images/logoperusahaan.png">
+<meta property="og:url" content="https://www.harvindosriananta.my.id/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="id_ID">
 
@@ -35,10 +37,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Harvindo Sri Ananta - Dealer Resmi Lovol Cikampek">
 <meta name="twitter:description" content="Dealer resmi Lovol di Cikampek, Karawang. Combine Harvester, Tractor, Spare Part dan Servis terpercaya.">
-<meta name="twitter:image" content="assets/images/logoperusahaan.png">
+<meta name="twitter:image" content="https://www.harvindosriananta.my.id/assets/images/logoperusahaan.png">
 
 <!-- Canonical -->
-<link rel="canonical" href="https://www.harvindosriananta.my.id">
+<link rel="canonical" href="https://www.harvindosriananta.my.id/">
 
 </head>
 
@@ -53,9 +55,9 @@
       <img src="assets/images/logoperusahaan.png"
            alt="Logo PT Harvindo Sri Ananta"
            class="h-10 w-auto">
-      <h1 class="text-xl font-bold">
+      <span class="text-xl font-bold">
         Harvindo Sri Ananta
-      </h1>
+      </span>
     </div>
 
     <!-- Burger Button (Mobile Only) -->
@@ -66,7 +68,7 @@
     <!-- Desktop Menu -->
     <nav class="hidden md:flex items-center space-x-8">
 
-      <a data-key="nav_home" href="index.html" class="no-underline hover:text-green-400 transition">Beranda</a>
+      <a data-key="nav_home" href="/" class="no-underline hover:text-green-400 transition">Beranda</a>
       <a data-key="nav_profile" href="#profil" class="no-underline hover:text-green-400 transition">Profil</a>
 
       <!-- DROPDOWN PRODUK -->
@@ -114,8 +116,8 @@
 
     <div class="px-6 py-4 space-y-4">
 
-      <a data-key="nav_home" href="index.html" class="block hover:text-green-400 transition mobile-link">Beranda</a>
-      <a data-key="nav_profile" href="index.html#profil" class="block hover:text-green-400 transition mobile-link">Profil</a>
+      <a data-key="nav_home" href="/" class="block hover:text-green-400 transition mobile-link">Beranda</a>
+      <a data-key="nav_profile" href="/#profil" class="block hover:text-green-400 transition mobile-link">Profil</a>
 
       <!-- Mobile Produk -->
       <div>
@@ -128,9 +130,9 @@
         </a>
       </div>
 
-      <a data-key="nav_service" href="index.html#layanan" class="block hover:text-green-400 transition mobile-link">Layanan</a>
+      <a data-key="nav_service" href="/#layanan" class="block hover:text-green-400 transition mobile-link">Layanan</a>
       <a data-key="nav_article" href="artikel.html" class="block hover:text-green-400 transition mobile-link">Artikel</a>
-      <a data-key="nav_contact" href="index.html#hubungikami" class="block hover:text-green-400 transition mobile-link">Hubungi Kami</a>
+      <a data-key="nav_contact" href="/#hubungikami" class="block hover:text-green-400 transition mobile-link">Hubungi Kami</a>
 
       <!-- Tombol Toggle Bahasa (Mobile) -->
       <button id="lang-btn-mobile"
@@ -181,7 +183,7 @@
 
 <!-- TENTANG -->
 <section id="profil" class="py-16 container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-  <img src="assets/images/profilecompany.png" class="rounded-lg shadow hover:scale-110 transition duration-500">
+  <img src="assets/images/profilecompany.png" alt="PT Harvindo Sri Ananta, dealer resmi Lovol di Karawang" loading="lazy" class="rounded-lg shadow hover:scale-110 transition duration-500">
   <div>
     <h3 data-key="about_title" class="text-2xl font-bold mb-4">Tentang Kami</h3>
     <p data-key="about_desc1">
@@ -238,39 +240,39 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
       <div class="overflow-hidden rounded-xl shadow group">
-        <img src="assets/images/foto1.jpg"
+        <img src="assets/images/foto1.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 1" loading="lazy"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
       <div class="overflow-hidden rounded-xl shadow group">
-        <img src="assets/images/foto2.jpg"
+        <img src="assets/images/foto2.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 2" loading="lazy"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
       <div class="overflow-hidden rounded-xl shadow group">
-        <img src="assets/images/foto3.jpg"
+        <img src="assets/images/foto3.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 3" loading="lazy"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
       <div class="overflow-hidden rounded-xl shadow group">
-        <img src="assets/images/foto4.jpg"
+        <img src="assets/images/foto4.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 4" loading="lazy"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
       <div class="overflow-hidden rounded-xl shadow group">
-        <img src="assets/images/foto5.jpg"
+        <img src="assets/images/foto5.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 5" loading="lazy"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
       <div class="overflow-hidden rounded-xl shadow group">
-        <img src="assets/images/foto6.jpg"
+        <img src="assets/images/foto6.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 6" loading="lazy"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
       <div class="overflow-hidden rounded-xl shadow group">
-        <img src="assets/images/foto7.jpg"
+        <img src="assets/images/foto7.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 7" loading="lazy"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
       <div class="overflow-hidden rounded-xl shadow group">
-        <img src="assets/images/foto8.jpg"
+        <img src="assets/images/foto8.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 8" loading="lazy"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
       <div class="overflow-hidden rounded-xl shadow group">
-        <img src="assets/images/foto9.jpg"
+        <img src="assets/images/foto9.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 9" loading="lazy"
              class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
       </div>
 
@@ -395,7 +397,7 @@
   </div>
 </section>
 
-<!-- FAQ Schema Markup (SEO Rich Snippet) -->
+<!-- FAQ Schema Markup -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -422,7 +424,7 @@
       "name": "Apakah bisa pembelian dengan sistem kredit/cicilan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ya, kami menyediakan opsi pembelian secara tunai maupun kredit melalui lembaga pembiayaan yang bekerja sama dengan kami."
+        "text": "Ya, kami menyediakan opsi pembelian secara tunai maupun kredit melalui lembaga pembiayaan yang bekerja sama dengan kami. Hubungi tim kami untuk informasi lebih lanjut."
       }
     },
     {
@@ -441,19 +443,19 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "AutoDealer",
+  "@type": "LocalBusiness",
   "name": "Dealer Resmi Lovol - Harvindo Sri Ananta",
   "alternateName": "PT Harvindo Sri Ananta",
-  "url": "https://www.harvindosriananta.my.id",
+  "url": "https://www.harvindosriananta.my.id/",
   "logo": "https://www.harvindosriananta.my.id/assets/images/logoperusahaan.png",
   "image": "https://www.harvindosriananta.my.id/assets/images/logoperusahaan.png",
   "description": "Dealer resmi Lovol di Karawang, Jawa Barat. Menyediakan Combine Harvester, Tractor, Spare Part dan Servis terpercaya.",
   "telephone": "+6282258063520",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Jl. Raya Rt 01/Rw 02 Pangulah Selatan",
-    "addressLocality": "Kota Baru",
-    "addressRegion": "Karawang, Jawa Barat",
+    "streetAddress": "Jl. Raya Rt 01/Rw 02 Pangulah Selatan, Kec. Kota Baru",
+    "addressLocality": "Karawang",
+    "addressRegion": "Jawa Barat",
     "postalCode": "41374",
     "addressCountry": "ID"
   },
@@ -488,6 +490,7 @@
       <!-- Google Maps -->
       <div class="rounded-lg overflow-hidden shadow-lg h-full">
         <iframe
+          title="Lokasi Dealer Resmi Lovol Harvindo Sri Ananta di Karawang"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15859.651300232175!2d107.47133277903927!3d-6.40523157052545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696da63b7c63c9%3A0x26ca36ee2032d83a!2sDealer%20Resmi%20Lovol%20-%20Harvindo%20Sri%20Ananta!5e0!3m2!1sid!2sid!4v1788589408103!5m2!1sid!2sid"
           width="100%"
           height="450"
@@ -594,7 +597,7 @@
   </div>
 
   <!-- Button WA -->
-  <a href="https://wa.me/6281273868385" target="_blank"
+  <a href="https://wa.me/6281273868385" target="_blank" aria-label="Chat via WhatsApp"
      class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition duration-300">
     <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>

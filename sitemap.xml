@@ -4,7 +4,7 @@
   <!-- Halaman Utama -->
   <url>
     <loc>https://www.harvindosriananta.my.id/</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -34,7 +34,7 @@
 
   <!-- Isi Artikel -->
   <url>
-    <loc>https://www.harvindosriananta.my.id/artikel/tips-merawat-combine-harvester.html</loc>
+    <loc>https://www.harvindosriananta.my.id/artikel/tips-merawat-combine.html</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -62,7 +62,7 @@
   </url>
 
   <url>
-    <loc>https://www.harvindosriananta.my.id/artikel/panduan-memilih-combine-harvester.html</loc>
+    <loc>https://www.harvindosriananta.my.id/artikel/panduan-memilih-combine.html</loc>
     <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
