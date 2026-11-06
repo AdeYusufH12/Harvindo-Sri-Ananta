@@ -33,6 +33,30 @@
   </url>
 
   <!-- Isi Artikel -->
+
+<url>
+    <loc>https://www.harvindosriananta.my.id/artikel/kenapa-lovol-jadi-pilihan-petani-asia-tenggara.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  
+
+  <url>
+    <loc>https://www.harvindosriananta.my.id/artikel/combine-harvester-bisa-panen-apa-saja.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.harvindosriananta.my.id/artikel/sewa-vs-beli-combine-harvester.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://www.harvindosriananta.my.id/artikel/tips-merawat-combine.html</loc>
     <lastmod>2026-01-20</lastmod>
@@ -64,20 +88,6 @@
   <url>
     <loc>https://www.harvindosriananta.my.id/artikel/panduan-memilih-combine.html</loc>
     <lastmod>2026-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.harvindosriananta.my.id/artikel/sewa-vs-beli-combine-harvester.html</loc>
-    <lastmod>2026-10-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-<url>
-    <loc>https://www.harvindosriananta.my.id/artikel/combine-harvester-bisa-panen-apa-saja.html</loc>
-    <lastmod>2026-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
