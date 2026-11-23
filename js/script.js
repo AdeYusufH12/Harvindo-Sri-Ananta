@@ -290,3 +290,97 @@ if (document.getElementById('lightbox')) {
     if (e.key === 'Escape') { lb.style.display = 'none'; document.body.style.overflow = ''; }
   });
 }
+
+// Gallery + Lightbox Produk Combine
+(function () {
+  var main = document.getElementById('cg-main');
+  if (!main) return; // bukan halaman produk combine
+
+  var images = [
+    'assets/images/product-combine-1.jpeg',
+    'assets/images/product-combine-2.jpeg',
+    'assets/images/product-combine-3.jpeg',
+    'assets/images/product-combine-4.jpeg'
+  ];
+  var thumbs = document.querySelectorAll('.cg-thumb');
+  var lb = document.getElementById('cg-lightbox');
+  var lbImg = document.getElementById('cg-lb-img');
+  var lbDots = document.querySelectorAll('.cg-lb-dot');
+  var current = 0;
+  var timer = null;
+
+  function show(index) {
+    current = (index + images.length) % images.length;
+
+    // Foto utama (fade)
+    main.style.opacity = '0';
+    setTimeout(function () {
+      main.src = images[current];
+      main.style.opacity = '1';
+    }, 200);
+
+    // Thumbnail aktif
+    thumbs.forEach(function (t, i) {
+      t.classList.toggle('active', i === current);
+    });
+
+    // Lightbox (kalau sedang terbuka)
+    lbImg.src = images[current];
+    lbDots.forEach(function (d, i) {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  function startAuto() {
+    stopAuto();
+    timer = setInterval(function () { show(current + 1); }, 4000);
+  }
+  function stopAuto() {
+    if (timer) { clearInterval(timer); timer = null; }
+  }
+
+  // Klik thumbnail
+  thumbs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      show(parseInt(t.getAttribute('data-index'), 10));
+      startAuto();
+    });
+  });
+
+  // Buka lightbox
+  main.addEventListener('click', function () {
+    lbImg.src = images[current];
+    lbDots.forEach(function (d, i) { d.classList.toggle('active', i === current); });
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    stopAuto();
+  });
+
+  function closeLb() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+    startAuto();
+  }
+
+  document.getElementById('cg-lb-close').addEventListener('click', closeLb);
+  document.getElementById('cg-lb-prev').addEventListener('click', function (e) { e.stopPropagation(); show(current - 1); });
+  document.getElementById('cg-lb-next').addEventListener('click', function (e) { e.stopPropagation(); show(current + 1); });
+  lbDots.forEach(function (d) {
+    d.addEventListener('click', function (e) {
+      e.stopPropagation();
+      show(parseInt(d.getAttribute('data-index'), 10));
+    });
+  });
+  lbImg.addEventListener('click', function (e) { e.stopPropagation(); });
+  lb.addEventListener('click', closeLb);
+
+  // Keyboard
+  document.addEventListener('keydown', function (e) {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowRight') show(current + 1);
+    if (e.key === 'ArrowLeft') show(current - 1);
+  });
+
+  startAuto();
+})();
