@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dokumentasi Kegiatan | Harvindo Sri Ananta</title>
+
+<link rel="icon" type="image/png" href="assets/images/logoperusahaan.png">
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/tailwind.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Primary SEO -->
+<meta name="description" content="Dokumentasi kegiatan PT Harvindo Sri Ananta, dealer resmi Lovol Cikampek Karawang: serah terima unit, servis dan perbaikan, serta survei lokasi lahan.">
+<meta name="keywords" content="dokumentasi harvindo sri ananta, galeri dealer lovol, serah terima combine harvester, servis combine harvester karawang, survei lokasi alsintan, dealer lovol karawang">
+<meta name="author" content="PT Harvindo Sri Ananta">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Dokumentasi Kegiatan - Harvindo Sri Ananta">
+<meta property="og:description" content="Dokumentasi serah terima unit, servis, dan survei lapangan PT Harvindo Sri Ananta, dealer resmi Lovol di Karawang.">
+<meta property="og:image" content="https://www.harvindosriananta.my.id/assets/images/logoperusahaan.png">
+<meta property="og:url" content="https://www.harvindosriananta.my.id/galeri.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://www.harvindosriananta.my.id/galeri.html">
+
+</head>
+
+<body class="text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="assets/images/logoperusahaan.png"
+           alt="Logo PT Harvindo Sri Ananta"
+           class="h-10 w-auto">
+      <span class="text-xl font-bold">
+        Harvindo Sri Ananta
+      </span>
+    </div>
+
+    <!-- Burger Button (Mobile Only) -->
+    <button id="menuBtn" class="md:hidden text-3xl focus:outline-none">
+         <span id="menuIcon">☰</span>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex items-center space-x-8">
+
+      <a data-key="nav_home" href="index.html" class="no-underline hover:text-green-400 transition">Beranda</a>
+      <!-- DROPDOWN PRODUK -->
+      <div class="relative group">
+        <button data-key="nav_product" class="no-underline focus:outline-none">
+          Produk
+        </button>
+
+        <div class="absolute left-0 top-full w-48 bg-white shadow-lg rounded
+                    opacity-0 invisible
+                    group-hover:opacity-100 group-hover:visible
+                    transition duration-200">
+
+          <a data-key="nav_product_combine" href="produk-combine.html"
+             class="block px-4 py-2 hover:bg-gray-100 hover:text-green-400 transition">
+             Combine Harvester
+          </a>
+
+          <a data-key="nav_product_tractor" href="produk-tractor.html"
+             class="block px-4 py-2 hover:bg-gray-100 hover:text-green-400 transition">
+             Tractor
+          </a>
+        </div>
+      </div>
+
+      <a data-key="nav_service" href="index.html#layanan" class="no-underline hover:text-green-400 transition">Layanan</a>
+      <a data-key="nav_gallery" href="galeri.html" class="no-underline hover:text-green-400 transition">Galeri</a>
+      <a data-key="nav_article" href="artikel.html" class="no-underline hover:text-green-400 transition">Artikel</a>
+      <a data-key="nav_contact" href="https://wa.me/6281273868385?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20produk%20Lovol%20di%20Harvindo%20Sri%20Ananta"
+         target="_blank" class="no-underline bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition">Hubungi Kami</a>
+
+      <!-- Tombol Toggle Bahasa -->
+      <button id="lang-btn"
+              class="border border-gray-400 text-gray-700 text-sm px-3 py-1 rounded-full hover:bg-green-600 hover:text-white hover:border-green-600 transition duration-200">
+        🌐 EN
+      </button>
+
+    </nav>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+     class="md:hidden bg-white border-t shadow
+            overflow-hidden max-h-0 opacity-0
+            transition-all duration-500 ease-in-out">
+
+    <div class="px-6 py-4 space-y-4">
+
+      <a data-key="nav_home" href="index.html" class="block hover:text-green-400 transition mobile-link">Beranda</a>
+      <!-- Mobile Produk -->
+      <div>
+        <p data-key="nav_product" class="font-semibold mb-2">Produk</p>
+        <a data-key="nav_product_combine" href="produk-combine.html" class="block pl-4 mb-2 hover:text-green-400 transition">
+          Combine Harvester
+        </a>
+        <a data-key="nav_product_tractor" href="produk-tractor.html" class="block pl-4 hover:text-green-400 transition">
+          Tractor
+        </a>
+      </div>
+
+      <a data-key="nav_service" href="index.html#layanan" class="block hover:text-green-400 transition mobile-link">Layanan</a>
+      <a data-key="nav_gallery" href="galeri.html" class="block hover:text-green-400 transition mobile-link">Galeri</a>
+      <a data-key="nav_article" href="artikel.html" class="block hover:text-green-400 transition mobile-link">Artikel</a>
+      <a data-key="nav_contact" href="https://wa.me/6281273868385?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20produk%20Lovol%20di%20Harvindo%20Sri%20Ananta"
+         target="_blank" class="block text-center bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full font-semibold transition">Hubungi Kami</a>
+
+      <!-- Tombol Toggle Bahasa (Mobile) -->
+      <button id="lang-btn-mobile"
+              class="border border-gray-400 text-gray-700 text-sm px-3 py-1 rounded-full hover:bg-green-600 hover:text-white hover:border-green-600 transition duration-200">
+        🌐 EN
+      </button>
+
+    </div>
+
+  </div>
+
+</header>
+
+<!-- GALERI -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="text-center mb-10">
+      <h1 data-key="gallery_title" class="text-2xl md:text-4xl font-bold mb-6">
+        Dokumentasi Kegiatan
+      </h1>
+      <p data-key="gallery_desc" class="text-gray-600 max-w-2xl mx-auto">
+        Dokumentasi aktivitas distribusi, servis, dan survei lapangan PT Harvindo Sri Ananta.
+      </p>
+    </div>
+
+    <!-- Filter Kategori -->
+    <div class="gl-filters">
+      <button type="button" class="gl-filter active" data-filter="all" data-key="gallery_filter_all">Semua</button>
+      <button type="button" class="gl-filter" data-filter="penjualan" data-key="gallery_filter_sales">Penjualan Unit</button>
+      <button type="button" class="gl-filter" data-filter="servis" data-key="gallery_filter_service">Servis & Perbaikan</button>
+      <button type="button" class="gl-filter" data-filter="survei" data-key="gallery_filter_survey">Survei Lokasi</button>
+    </div>
+
+    <!--
+      CARA MENAMBAH FOTO BARU:
+      1. Simpan foto di assets/images/ (mis. foto10.jpg)
+      2. Copy 1 blok <figure> di bawah, taruh PALING ATAS (supaya yang terbaru tampil duluan)
+      3. Ganti: src, alt, data-category (penjualan / servis / survei), data-caption, dan teks di <figcaption>
+    -->
+    <div class="gl-grid" id="gl-grid">
+
+      <figure class="gl-item" data-category="penjualan" data-caption="Serah Terima Unit">
+        <img src="assets/images/foto1.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 1" loading="lazy">
+        <figcaption class="gl-cap">Serah Terima Unit</figcaption>
+      </figure>
+
+      <figure class="gl-item" data-category="survei" data-caption="Survei Lokasi">
+        <img src="assets/images/foto2.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 2" loading="lazy">
+        <figcaption class="gl-cap">Survei Lokasi</figcaption>
+      </figure>
+
+      <figure class="gl-item" data-category="penjualan" data-caption="Serah terima Unit">
+        <img src="assets/images/foto3.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 3" loading="lazy">
+        <figcaption class="gl-cap">Serah Terima Unit</figcaption>
+      </figure>
+
+      <figure class="gl-item" data-category="penjualan" data-caption="Serah Terima Unit">
+        <img src="assets/images/foto4.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 4" loading="lazy">
+        <figcaption class="gl-cap">Serah Terima Unit</figcaption>
+      </figure>
+
+      <figure class="gl-item" data-category="servis" data-caption="Kedatangan 2 Unit Tractor">
+        <img src="assets/images/foto5.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 5" loading="lazy">
+        <figcaption class="gl-cap">Kedatangan 2 Unit Tractor</figcaption>
+      </figure>
+
+      <figure class="gl-item" data-category="survei" data-caption="Survei Lokasi">
+        <img src="assets/images/foto6.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 6" loading="lazy">
+        <figcaption class="gl-cap">Survei Lokasi</figcaption>
+      </figure>
+
+      <figure class="gl-item" data-category="servis" data-caption="Kedatangan 1 Unit Tractor">
+        <img src="assets/images/foto7.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 7" loading="lazy">
+        <figcaption class="gl-cap">Kedatangan 1 Unit Tractor</figcaption>
+      </figure>
+
+      <figure class="gl-item" data-category="servis" data-caption="Servis Unit Konsumen">
+        <img src="assets/images/foto8.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 8" loading="lazy">
+        <figcaption class="gl-cap">Servis Unit Konsumen</figcaption>
+      </figure>
+
+      <figure class="gl-item" data-category="penjualan" data-caption="Pengiriman 1 Unit Combine">
+        <img src="assets/images/foto9.jpg" alt="Dokumentasi kegiatan Harvindo Sri Ananta 9" loading="lazy">
+        <figcaption class="gl-cap">Pengiriman 1 Unit Combine</figcaption>
+      </figure>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX GALERI -->
+<div id="gl-lightbox" class="gl-lightbox">
+  <button type="button" class="gl-lb-btn gl-lb-close" id="gl-lb-close" aria-label="Tutup">✕</button>
+  <button type="button" class="gl-lb-btn gl-lb-prev" id="gl-lb-prev" aria-label="Foto sebelumnya">&#8249;</button>
+  <img id="gl-lb-img" class="gl-lb-img" src="" alt="">
+  <p id="gl-lb-caption" class="gl-lb-caption"></p>
+  <p id="gl-lb-count" class="gl-lb-count"></p>
+  <button type="button" class="gl-lb-btn gl-lb-next" id="gl-lb-next" aria-label="Foto berikutnya">&#8250;</button>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-black text-white pt-16 pb-6">
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+
+    <!-- Kolom 1 -->
+    <div class="text-left">
+      <h3 data-key="footer_company" class="text-xl font-semibold mb-4">
+        PT Harvindo Sri Ananta
+      </h3>
+      <p data-key="footer_email" class="flex items-center mb-2">
+        Email : operational@harvindo.com
+      </p>
+      <p data-key="footer_wa" class="flex items-center mb-2">
+        WhatsApp : 0812-3177-3188
+      </p>
+      <p data-key="footer_address" class="flex items-center">
+        Alamat : Jl. Raya Rt 01/Rw 02 Pangulah Selatan, Kec. Kota Baru, Kab. Karawang, Jawa Barat 41374
+      </p>
+    </div>
+
+    <!-- Kolom 2 -->
+    <div class="md:text-center">
+      <h3 data-key="footer_social" class="text-xl font-semibold mb-4">Sosial Media</h3>
+
+      <a href="https://web.facebook.com/profile.php?id=61589167812106"
+         target="_blank"
+         class="flex items-center justify-start md:justify-center mb-3 hover:text-green-400 transition">
+        <img src="assets/images/logofb.png" alt="Facebook" class="w-5 h-5 mr-2">
+        Facebook
+      </a>
+
+      <a href="https://www.instagram.com/harvindo_lovol/"
+         target="_blank"
+         class="flex items-center justify-start md:justify-center mb-3 hover:text-green-400 transition">
+        <img src="assets/images/logoig.png" alt="Instagram" class="w-5 h-5 mr-2">
+        Instagram
+      </a>
+
+      <a href="https://www.tiktok.com/@harvindolovol"
+         target="_blank"
+         class="flex items-center justify-start md:justify-center hover:text-green-400 transition">
+        <img src="assets/images/logotiktok.png" alt="TikTok" class="w-5 h-5 mr-2">
+        TikTok
+      </a>
+    </div>
+
+    <!-- Kolom 3 -->
+    <div class="text-left md:text-right">
+      <h3 data-key="footer_nav" class="text-xl font-semibold mb-4">Navigasi</h3>
+      <p class="mb-2"><a data-key="footer_nav_about" href="index.html#profil" class="no-underline hover:text-green-400 transition">Tentang Kami</a></p>
+      <p class="mb-2"><a data-key="footer_nav_service" href="index.html#layanan" class="no-underline hover:text-green-400 transition">Layanan</a></p>
+      <p><a data-key="footer_nav_contact" href="index.html#hubungikami" class="no-underline hover:text-green-400 transition">Hubungi Kami</a></p>
+    </div>
+
+  </div>
+
+  <!-- Garis -->
+  <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400 text-sm">
+    <span data-key="footer_copyright">Copyright© 2026 PT Harvindo Sri Ananta. All Rights Reserved.</span>
+  </div>
+
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+
+  <!-- Label tooltip -->
+  <div id="wa-tooltip"
+       class="bg-white text-gray-700 text-sm font-medium px-4 py-2 rounded-lg shadow-lg
+              transition-all duration-500 opacity-0 translate-x-4"
+       style="white-space: nowrap;">
+    <span data-key="wa_tooltip">Butuh bantuan? 💬</span>
+  </div>
+
+  <!-- Button WA -->
+  <a href="https://wa.me/6281273868385" target="_blank" aria-label="Chat via WhatsApp"
+     class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+</div>
+
+<script src="js/script.js" defer></script>
+
+</body>
+
+</html>

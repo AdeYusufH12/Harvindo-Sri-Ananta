@@ -384,3 +384,73 @@ if (document.getElementById('lightbox')) {
 
   startAuto();
 })();
+
+// Galeri Dokumentasi (galeri.html)
+(function () {
+  var grid = document.getElementById('gl-grid');
+  if (!grid) return; // bukan halaman galeri
+
+  var items = Array.prototype.slice.call(grid.querySelectorAll('.gl-item'));
+  var filters = document.querySelectorAll('.gl-filter');
+  var lb = document.getElementById('gl-lightbox');
+  var lbImg = document.getElementById('gl-lb-img');
+  var lbCap = document.getElementById('gl-lb-caption');
+  var lbCount = document.getElementById('gl-lb-count');
+  var visible = [];
+  var current = 0;
+
+  function getVisible() {
+    return items.filter(function (it) { return !it.classList.contains('hide'); });
+  }
+
+  // Filter kategori
+  filters.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var f = btn.getAttribute('data-filter');
+      filters.forEach(function (b) { b.classList.toggle('active', b === btn); });
+      items.forEach(function (it) {
+        var show = (f === 'all' || it.getAttribute('data-category') === f);
+        it.classList.toggle('hide', !show);
+      });
+    });
+  });
+
+  function show(index) {
+    current = (index + visible.length) % visible.length;
+    var it = visible[current];
+    var img = it.querySelector('img');
+    lbImg.src = img.getAttribute('src');
+    lbImg.alt = img.getAttribute('alt') || '';
+    lbCap.textContent = it.getAttribute('data-caption') || '';
+    lbCount.textContent = (current + 1) + ' / ' + visible.length;
+  }
+
+  function openLb(item) {
+    visible = getVisible();
+    show(visible.indexOf(item));
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLb() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  items.forEach(function (it) {
+    it.addEventListener('click', function () { openLb(it); });
+  });
+
+  document.getElementById('gl-lb-close').addEventListener('click', closeLb);
+  document.getElementById('gl-lb-prev').addEventListener('click', function (e) { e.stopPropagation(); show(current - 1); });
+  document.getElementById('gl-lb-next').addEventListener('click', function (e) { e.stopPropagation(); show(current + 1); });
+  lbImg.addEventListener('click', function (e) { e.stopPropagation(); });
+  lb.addEventListener('click', closeLb);
+
+  document.addEventListener('keydown', function (e) {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowRight') show(current + 1);
+    if (e.key === 'ArrowLeft') show(current - 1);
+  });
+})();
